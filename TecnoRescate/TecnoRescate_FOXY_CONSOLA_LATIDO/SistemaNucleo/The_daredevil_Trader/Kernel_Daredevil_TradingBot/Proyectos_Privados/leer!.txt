@@ -1,0 +1,2 @@
+@The_daredevil@ -> "conversor usb a Serial UartTtl Chip Cp210..."
+@/EDIT@

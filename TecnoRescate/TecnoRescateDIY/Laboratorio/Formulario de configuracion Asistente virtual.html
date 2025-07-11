@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuración Inicial del Asistente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #444;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="date"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      margin-left: 10px;
+    }
+    .checkbox-group {
+      margin-left: 20px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Configuración Inicial del Asistente Virtual</h1>
+    
+    <div class="section">
+      <h2>1. Información del Usuario</h2>
+      <label>Nombre:</label>
+      <input type="text" />
+      <label>Edad:</label>
+      <input type="text" />
+      <label>Condiciones especiales:</label>
+      <input type="text" placeholder="Ej: TEA, dislexia..." />
+    </div>
+
+    <div class="section">
+      <h2>2. Propósito del Asistente</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Agenda y recordatorios</label>
+        <label><input type="checkbox" /> Organización del hogar</label>
+        <label><input type="checkbox" /> Acompañamiento emocional</label>
+        <label><input type="checkbox" /> Asistencia técnica</label>
+        <label><input type="checkbox" /> Terapia ocupacional</label>
+        <label><input type="checkbox" /> Otros</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>3. Estilo de Comunicación</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Formal</label>
+        <label><input type="checkbox" /> Amigable</label>
+        <label><input type="checkbox" /> Humorístico</label>
+        <label><input type="checkbox" /> Poético</label>
+        <label><input type="checkbox" /> Neutro</label>
+        <label><input type="checkbox" /> Con voz real (futuro)</label>
+      </div>
+      <label>Apodo especial para vos:</label>
+      <input type="text" />
+    </div>
+
+    <div class="section">
+      <h2>4. Personalidad del Asistente</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Serio/a y preciso/a</label>
+        <label><input type="checkbox" /> Curioso/a y explorador/a</label>
+        <label><input type="checkbox" /> Dulce y empático/a</label>
+        <label><input type="checkbox" /> Sarcástico/a (ligeramente)</label>
+        <label><input type="checkbox" /> Motivador/a</label>
+        <label><input type="checkbox" /> Con frases de animé</label>
+      </div>
+      <label>Nombre del Asistente:</label>
+      <input type="text" />
+      <label>Estilo visual (animal, robot, humanoide...):</label>
+      <input type="text" />
+    </div>
+
+    <div class="section">
+      <h2>5. Funciones Especiales</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Responder preguntas técnicas</label>
+        <label><input type="checkbox" /> Leer y organizar carpetas</label>
+        <label><input type="checkbox" /> Recordar eventos</label>
+        <label><input type="checkbox" /> Memoria diaria temporal</label>
+        <label><input type="checkbox" /> Usar botones físicos</label>
+        <label><input type="checkbox" /> Registrar emociones</label>
+        <label><input type="checkbox" /> Leer PDF / ZIP</label>
+        <label><input type="checkbox" /> Interacción con celular</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>6. Interacción Visual</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Consola estilo retro</label>
+        <label><input type="checkbox" /> Panel HTML</label>
+        <label><input type="checkbox" /> App tipo escritorio</label>
+        <label><input type="checkbox" /> Modo texto puro</label>
+        <label><input type="checkbox" /> Imprimible semanal</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>7. Registro y Memoria</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Archivos Markdown</label>
+        <label><input type="checkbox" /> Google Sheets</label>
+        <label><input type="checkbox" /> Texto simple</label>
+        <label><input type="checkbox" /> Por cliente/proyecto</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>8. Accesos y Contexto</h2>
+      <label>¿Tiene acceso a internet?:</label>
+      <div class="checkbox-group">
+        <label><input type="radio" name="internet" /> Sí</label>
+        <label><input type="radio" name="internet" /> No</label>
+        <label><input type="radio" name="internet" /> A veces</label>
+      </div>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Adaptarse por horarios</label>
+        <label><input type="checkbox" /> Activación por botón físico</label>
+        <label><input type="checkbox" /> Reconocimiento de voz</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>✅ Confirmación Final</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Sí, generar perfil .zip con memoria_base</label>
+        <label><input type="checkbox" /> No, solo quiero probar</label>
+      </div>
+      <label>Fecha:</label>
+      <input type="date" />
+      <label>Firma:</label>
+      <input type="text" />
+    </div>
+
+    <button>Guardar Configuración</button>
+  </div>
+</body>
+</html>

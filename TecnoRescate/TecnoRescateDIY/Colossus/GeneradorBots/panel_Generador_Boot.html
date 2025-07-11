@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>🧠 Panel Comercial TecnoRescate</title>
+<!-- AGREGAR DESPUÉS DEL TÍTULO -->
+<label>📂 Seleccioná un archivo dentro de la carpeta del cliente:</label>
+<input type="file" id="archivoCliente" />
+<div id="resultadoRuta" style="margin-top:10px; color: #7fff7f; font-style: italic;"></div>
+
+<script>
+let carpetaClienteSeleccionada = "Sin definir aún";
+
+document.getElementById("archivoCliente").addEventListener("change", function (e) {
+  const rutaCompleta = e.target.files[0].webkitRelativePath || e.target.files[0].name;
+  const partes = rutaCompleta.split("/");
+  carpetaClienteSeleccionada = partes.length > 1 ? partes[0] : partes[0].split("\\")[0];
+  document.getElementById("resultadoRuta").textContent =
+    `[tree_cliente]\nRuta detectada: ${carpetaClienteSeleccionada}`;
+});
+</script>
+  <style>
+    body { font-family: monospace; background: #111; color: #0f0; padding: 2rem; font-size: 1.2rem; }
+    h1 { color: #00ffcc; font-size: 2rem; }
+    label { display: block; margin-top: 10px; }
+    input[type="checkbox"] { margin-right: 10px; }
+    select {
+      padding: 5px;
+      width: 100%;
+      margin-top: 10px;
+      font-family: monospace;
+    }
+    .total { margin-top: 20px; font-size: 1.5rem; color: #ffff00; }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    button {
+      margin: 10px;
+      background: #0f0;
+      color: #000;
+      padding: 12px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+    .output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background: #222;
+      padding: 20px;
+      border: 1px dashed #0f0;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Panel Comercial TecnoRescate</h1>
+
+  <label>📁 Seleccioná el cliente o carpeta destino:</label>
+  <select id="carpetaCliente">
+    <option value="BotCervecero_Web">BotCervecero_Web</option>
+    <option value="BotBarberia_Web">BotBarberia_Web</option>
+    <option value="BotDelibery_web">BotDelibery_web</option>
+    <option value="BotServicioProfesional_Web">BotServicioProfesional_Web</option>
+    <option value="Bot_Presupuesto_ASCII">Bot_Presupuesto_ASCII</option>
+    <option value="ClientePanaderia">ClientePanaderia</option>
+    <option value="ClienteTatuadora">ClienteTatuadora</option>
+    <option value="NuevoCliente_Landing">NuevoCliente_Landing</option>
+  </select>
+
+  <label>📦 Plantilla base para usar:</label>
+  <select id="plantillaBase">
+    <option value="BotCervecero_Web.txt">BotCervecero_Web</option>
+    <option value="BotBarberia_Web.txt">BotBarberia_Web</option>
+    <option value="BotDelibery_web.txt">BotDelibery_web</option>
+    <option value="BotServicioProfesional_Web.txt">BotServicioProfesional_Web</option>
+    <option value="Bot_Presupuesto_ASCII.txt">Bot_Presupuesto_ASCII</option>
+  </select>
+
+  <h3>🧩 Seleccioná los módulos:</h3>
+  <form id="formulario">
+    <label><input type="checkbox" value="4500" data-label="Landing Básica" data-desc="Presentación simple con contacto.">🔹 Landing Básica ($4.500)</label>
+    <label><input type="checkbox" value="6500" data-label="Landing Pro" data-desc="Diseño avanzado + links sociales y botón WhatsApp.">🔷 Landing Pro ($6.500)</label>
+    <label><input type="checkbox" value="2000" data-label="Carta Interactiva" data-desc="Menú editable desde el celular.">📋 Carta Interactiva ($2.000)</label>
+    <label><input type="checkbox" value="1500" data-label="Botón de reservas" data-desc="Botón para reservar por WhatsApp.">📲 Botón de reservas ($1.500)</label>
+    <label><input type="checkbox" value="2500" data-label="Formulario de contacto" data-desc="Formulario online conectado a WhatsApp o correo.">📝 Formulario de contacto ($2.500)</label>
+    <label><input type="checkbox" value="1000" data-label="Diseño personalizado" data-desc="Colores y logos adaptados al negocio.">🎨 Diseño personalizado ($1.000)</label>
+    <label><input type="checkbox" value="1500" data-label="Código QR" data-desc="QR para escanear desde afiches o cartas.">🔳 Código QR ($1.500)</label>
+    <label><input type="checkbox" value="3000" data-label="Agenda de turnos" data-desc="Formulario de reserva con horarios y confirmación.">🗓️ Agenda de turnos ($3.000)</label>
+    <label><input type="checkbox" value="2500" data-label="Panel de seguimiento" data-desc="Panel para seguir pedidos, pacientes o tareas.">🗂️ Panel de seguimiento ($2.500)</label>
+    <label><input type="checkbox" value="2000" data-label="Presupuestador Técnico" data-desc="Formulario editable que genera texto ASCII por WhatsApp.">🧾 Presupuestador Técnico ($2.000)</label>
+    <label><input type="checkbox" value="3500" data-label="Dictado de voz" data-desc="Módulo de entrada de voz y conversión a texto.">🎤 Dictado de voz ($3.500)</label>
+    <label><input type="checkbox" value="1500" data-label="Estadísticas básicas" data-desc="Informe mensual simple de visitas o clics.">📈 Estadísticas básicas ($1.500)</label>
+  </form>
+
+  <div class="total">💸 Total: $<span id="total">0</span></div>
+
+  <div class="button-container">
+    <button onclick="generarTexto()">🧾 Generar texto para cliente</button>
+    <button onclick="generarInstrucciones()">🤖 Generar instrucciones para FOXY</button>
+    <button onclick="copiarTexto()">📋 Copiar texto</button>
+    <button onclick="borrarSalida()">🗑️ Borrar salida</button>
+    <button onclick="enviarAChatGPT()">🚀 Enviar a ChatGPT</button>
+  </div>
+
+  <div class="output" id="salida"></div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const total = document.getElementById('total');
+    const salida = document.getElementById('salida');
+    const carpetaCliente = document.getElementById('carpetaCliente');
+    const plantillaBase = document.getElementById('plantillaBase');
+
+    function calcularTotal() {
+      let suma = 0;
+      checkboxes.forEach(c => {
+        if (c.checked) suma += parseInt(c.value);
+      });
+      total.textContent = suma;
+    }
+
+    checkboxes.forEach(c => c.addEventListener('change', calcularTotal));
+
+    function generarTexto() {
+      const nombre = carpetaCliente.value;
+      let modulos = [];
+      checkboxes.forEach(c => {
+        if (c.checked) modulos.push(`- ${c.dataset.label} ($${c.value}): ${c.dataset.desc}`);
+      });
+      const mensaje = `✅ Presupuesto para ${nombre}:\n\nIncluye:\n${modulos.join('\n')}\n\n💸 Total: $${total.textContent}\n\nConsultanos si querés sumar más funciones. 😉`;
+      salida.textContent = mensaje;
+    }
+
+    function generarInstrucciones() {
+      const nombre = carpetaCliente.value;
+      const plantilla = plantillaBase.value;
+      let modulos = [];
+      checkboxes.forEach(c => {
+        if (c.checked) modulos.push(`- ${c.dataset.label}: ${c.dataset.desc}`);
+      });
+      const mensaje = `[FOXY_HTML_LOCAL]\n\nQuiero generar un bot para: ${nombre}\n\n🧱 Plantilla base: ${plantilla}\n📁 Carpeta de destino: ${nombre}/\n\n🧩 Módulos seleccionados:\n${modulos.join('\n')}\n\nEl diseño debe ser modular, funcional y optimizado para celulares.`;
+      salida.textContent = mensaje;
+    }
+
+    function copiarTexto() {
+      const texto = salida.textContent;
+      if (!texto) {
+        alert("⚠️ No hay nada para copiar.");
+        return;
+      }
+      navigator.clipboard.writeText(texto)
+        .then(() => alert("✅ Texto copiado al portapapeles."))
+        .catch(err => alert("❌ Error al copiar: " + err));
+    }
+
+    function borrarSalida() {
+      salida.textContent = "";
+      total.textContent = "0";
+    }
+
+    function enviarAChatGPT() {
+      const texto = salida.textContent;
+      if (!texto) {
+        alert("⚠️ Primero generá un texto para enviar.");
+        return;
+      }
+      const prompt = encodeURIComponent(texto);
+      window.open(`https://chat.openai.com/?prompt=${prompt}`, "_blank");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+const foxyMensaje = "Este documento funciona como el BIOS general del sistema TecnoRescate DIY. Organiza módulos activos, bots, hardware, planes y lógica evolutiva FOXY. Permite navegación y expansión sistemática desde la consola HTML retro.";

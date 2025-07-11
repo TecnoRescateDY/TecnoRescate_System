@@ -1,0 +1,16 @@
+Resumen Ejecutivo
+
+Tecno-Rescate DIY nace como respuesta a la necesidad de reducir el desperdicio electrónico y acercar soluciones tecnológicas accesibles a quienes más lo necesitan. Mediante la reutilización creativa de hardware descartado, buscamos generar impacto positivo en el ambiente, en la economía personal y en la autonomía tecnológica de las personas.
+
+A continuación, se presenta una visión general del proyecto:
+
++----------------------+----------------------------------------------------------------------------------------+
+| Ítem                 | Descripción                                                                            |
++----------------------+----------------------------------------------------------------------------------------+
+| Objetivo             | Reutilizar hardware obsoleto para crear asistentes virtuales y soluciones DIY.         |
+| Propuesta            | Transformar basura electrónica en tecnología útil, accesible y empática.              |
+| Acciones Claves      | Recolección, diagnóstico, reparación, diseño modular, difusión, acompañamiento.       |
+| Resultado Esperado   | Disminuir residuos, generar empleo verde, promover la autogestión tecnológica.         |
++----------------------+----------------------------------------------------------------------------------------+
+
+Tecno-Rescate DIY no solo es un emprendimiento técnico, sino una herramienta de inclusión, conciencia ecológica y empoderamiento. En las siguientes secciones se desarrollará cada aspecto que compone este plan para llevar la idea a su máxima expresión.

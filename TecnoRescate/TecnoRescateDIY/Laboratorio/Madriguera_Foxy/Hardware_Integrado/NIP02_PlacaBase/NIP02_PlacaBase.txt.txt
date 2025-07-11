@@ -1,0 +1,55 @@
+🧠 MÓDULO DE HARDWARE – FOXY
+
+Nombre del módulo: NIP02_PlacaBase
+Ubicación sugerida: /Foxy_Madriguera/Hardware_Integrado/NIP02_PlacaBase/
+
+📋 Descripción general:
+Placa base perteneciente a una cámara IP motorizada (año 2013), modelo serigrafiado NIP02&090_M V5. Esta placa actúa como HUB de entrada/salida, expansión y control para el módulo enchufable RT5350F (SoC principal).
+
+📆 Fecha de fabricación: Julio 8, 2013
+
+🔎 Componentes identificados:
+
+1. **ULN2803AG (18 patas)**
+   - Tipo: Driver Darlington de 8 canales
+   - Uso: Control de motores de movimiento (cabezal 360°), LEDs o relés
+
+2. **3 × 74HC259D (16 patas, tipo cucaracha)**
+   - Tipo: Latch de 8 bits (registro digital)
+   - Uso: Expansión de GPIOs desde el SoC, para múltiples funciones como control IR, LEDs, etc.
+
+3. **FM8002B (8 patas)**
+   - Tipo: Amplificador clase AB mono
+   - Uso: Salida de audio a parlante
+
+4. **ES8388 (34 patas)**
+   - Tipo: CODEC de audio (ADC + DAC, estéreo, I2S, I2C)
+   - Uso: Entrada de micrófono + salida a FM8002B
+   - Nota: Componente de calidad, común en reproductores MP3 y sistemas embebidos avanzados
+
+5. **THCOM / HS16-102**
+   - Estado: Sin información clara. Podría ser una marca interna o chip secundario.
+
+6. **Chip de 8 patas ilegible (probable '1500')**
+   - Estado: Indeterminado. Posible regulador o EEPROM.
+
+📦 Funciones distribuidas por la placa:
+| Función                 | Componente(s)                  | Estado |
+|-------------------------|--------------------------------|--------|
+| Movimiento motorizado   | ULN2803AG                      | ✅ Confirmado |
+| Expansión digital       | 74HC259D ×3                    | ✅ Confirmado |
+| Salida de audio (voz)   | FM8002B                        | ✅ Confirmado |
+| Entrada/salida de audio | ES8388                         | ✅ Confirmado |
+| Control central         | RT5350F (en zócalo)            | 🔄 En otro módulo |
+| Alimentación lógica     | Chip de 8 patas (por confirmar)| ⚠️ Revisar voltaje |
+
+📎 Estado general:
+- Placa en excelente estado de conservación
+- Conectores de motor y UART accesibles
+- Componentes soldados de fábrica
+- No presenta signos de quemaduras
+
+🎯 Rol en el sistema:
+Esta placa puede ser reutilizada como base de expansión de I/O y audio para Foxy, ideal para combinar con el módulo RT5350F. Funciona como una placa madre retro personalizada, con salidas listas para control directo de parlantes, motores, y periféricos reciclados.
+
+✍️ Registrado por: Adry (Técnico creador del sistema Colossus)

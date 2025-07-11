@@ -1,0 +1,40 @@
+Anexos
+
+Aquí se incluye toda la información adicional que respalda o complementa el contenido principal del plan de negocio.
+
+📄 **Referencias y Fuentes**:
+1. **Documentación técnica**:  
+   - Manuales de uso de hardware reciclado (como Raspberry Pi, ESP32).
+   - Guías de ensamblaje y reparación de equipos electrónicos.
+
+2. **Fuentes externas**:  
+   - Artículos sobre reciclaje electrónico y su impacto ambiental (referencias académicas, informes).
+   - Videos tutoriales y recursos sobre la creación de dispositivos DIY.
+
+📊 **Tablas y Gráficos**:
+1. **Gráfico de impacto ambiental**:  
+   - Comparación de residuos electrónicos antes y después de aplicar el reciclaje.
+   
+2. **Costos de producción vs. venta**:  
+   - Tabla con desglose de los costos de componentes reciclados frente a los costos de nuevos componentes en el mercado.
+
+3. **Calendario de implementación**:  
+   - Línea de tiempo con los plazos para el desarrollo y despliegue del proyecto.
+
+🔗 **Documentos adicionales**:
+1. **Licencia abierta (Creative Commons)**:  
+   - Documento que detalla los términos bajo los cuales el proyecto puede ser utilizado y modificado.
+   
+2. **Manual de usuario**:  
+   - Instrucciones paso a paso para ensamblar el asistente y cómo utilizar las funcionalidades principales.
+
+3. **Certificados y alianzas**:  
+   - Documentos que respaldan las colaboraciones con ONGs, entidades educativas y partners del proyecto.
+
+📧 **Contactos**:
+- **Dirección de contacto**: [correo@tecnorescate.com](mailto:correo@tecnorescate.com)
+- **Redes sociales**:  
+   - Instagram: @TecnoRescateDIY  
+   - Facebook: TecnoRescate DIY  
+   - Twitter: @TecnoRescate
+

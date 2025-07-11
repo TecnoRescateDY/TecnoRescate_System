@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bot Dictado Actas - Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background: #f0f0f0;
+    color: #222;
+  }
+  #textoDictado {
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    background: white;
+  }
+  button {
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem 0 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  #btnDictado {
+    background-color: #28a745;
+    color: white;
+  }
+  #btnDictado.stop {
+    background-color: #dc3545;
+  }
+  #btnCopiar {
+    background-color: #007bff;
+    color: white;
+  }
+  #btnBorrar {
+    background-color: #ffc107;
+    color: #222;
+  }
+  #estado {
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<h2>Bot Dictado Actas - Demo 🎙</h2>
+
+<button id="btnDictado">🎙 Iniciar dictado</button>
+<button id="btnCopiar">📄 Copiar texto</button>
+<button id="btnBorrar">🗑 Borrar texto</button>
+
+<div id="estado">Estado: detenido</div>
+
+<textarea id="textoDictado" placeholder="Aquí se mostrará el texto dictado..."></textarea>
+
+<script>
+  const btnDictado = document.getElementById('btnDictado');
+  const btnCopiar = document.getElementById('btnCopiar');
+  const btnBorrar = document.getElementById('btnBorrar');
+  const textoDictado = document.getElementById('textoDictado');
+  const estado = document.getElementById('estado');
+
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    alert('Este navegador no soporta reconocimiento de voz. Por favor usa Chrome.');
+  }
+
+  const recognition = new SpeechRecognition();
+  recognition.lang = 'es-AR';
+  recognition.interimResults = true;
+  recognition.continuous = true;
+
+  let escuchando = false;
+
+  recognition.onstart = () => {
+    escuchando = true;
+    estado.textContent = 'Estado: escuchando...';
+    btnDictado.textContent = '🛑 Detener dictado';
+    btnDictado.classList.add('stop');
+  };
+
+  recognition.onend = () => {
+    escuchando = false;
+    estado.textContent = 'Estado: detenido';
+    btnDictado.textContent = '🎙 Iniciar dictado';
+    btnDictado.classList.remove('stop');
+  };
+
+  recognition.onerror = (event) => {
+    console.error('Error en reconocimiento:', event.error);
+    estado.textContent = 'Error: ' + event.error;
+  };
+
+  recognition.onresult = (event) => {
+    let textoParcial = '';
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      textoParcial += event.results[i][0].transcript;
+    }
+    textoDictado.value = textoParcial;
+  };
+
+  btnDictado.addEventListener('click', () => {
+    if (escuchando) {
+      recognition.stop();
+    } else {
+      recognition.start();
+    }
+  });
+
+  btnCopiar.addEventListener('click', () => {
+    textoDictado.select();
+    document.execCommand('copy');
+    alert('Texto copiado al portapapeles');
+  });
+
+  btnBorrar.addEventListener('click', () => {
+    textoDictado.value = '';
+    estado.textContent = 'Texto borrado';
+  });
+</script>
+
+</body>
+</html>

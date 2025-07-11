@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FoxyPanel - Sala Administración</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00FF00;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+    .panel {
+      border: 2px solid #00FF00;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .titulo {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #00FF00;
+    }
+    .console {
+      background-color: #111;
+      border: 2px solid #00FF00;
+      padding: 10px 20px;
+      max-width: 90%;
+      margin: 20px auto;
+      font-size: 16px;
+      box-shadow: 0 0 10px #00FF00;
+      min-height: 60px;
+    }
+    .linea {
+      border-top: 1px solid #00FF00;
+      margin: 15px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    a {
+      color: #00FF00;
+      text-decoration: none;
+    }
+    .mensaje {
+      margin-top: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="panel">
+  <div class="titulo">
+    ╔════════════════════════════════════════════╗<br>
+    ║   🦊 FOXY MADRIGUERA - SALA: ADMINISTRACIÓN ║<br>
+    ╚════════════════════════════════════════════╝
+  </div>
+
+  <div class="console" id="foxyConsole">
+    <div id="typewriterText">[FOXY]> Inicializando módulo...</div>
+  </div>
+
+  <p><strong>Estado del Sistema:</strong> 🟢 Activo</p>
+  <p><strong>Usuario:</strong> Adry, Mago de Circuitos</p>
+
+  <div class="linea"></div>
+
+  <ul>
+    <li>[ 1 ] <a href="agenda_admin.html">📆 Agenda Interna</a></li>
+    <li>[ 2 ] <a href="../ModuloFinanciero/caja_diaria.html">💰 Módulo Financiero</a></li>
+    <li>[ 3 ] <a href="../SistemaNucleo/README_MAESTRO_TecnoRescate.md">🧠 Mapa del Sistema</a></li>
+    <li>[ 4 ] <a href="clientes_admin.md">🗃️ Registro de Clientes</a></li>
+    <li>[ 5 ] <a href="checklist_admin.md">✅ Tareas y Checklist</a></li>
+    <li>[ 6 ] <a href="Backups/">📥 Backups y Descargas</a></li>
+  </ul>
+
+  <div class="linea"></div>
+
+  <ul>
+    <li>[ A ] <a href="../BotsActivos/">📋 Ver Bots Activos</a></li>
+    <li>[ B ] <a href="../Laboratorio/">🧪 Entrar al Laboratorio</a></li>
+    <li>[ C ] <a href="../Repuestos/">🧰 Repuestos y Hardware</a></li>
+    <li>[ Z ] <a href="../index.html">🏠 Volver al Home</a></li>
+  </ul>
+
+  <div class="linea"></div>
+
+  <div class="mensaje">
+    🦊 Foxy dice: "La organización es el circuito maestro del éxito."
+  </div>
+</div>
+
+<script>
+  const foxyMensaje = "Cargando consola de administración... Listo. Bienvenido, Adry.";
+  const target = document.getElementById("typewriterText");
+  let i = 0;
+  target.innerHTML = '[FOXY]> ';
+  function typeWriter() {
+    if (i < foxyMensaje.length) {
+      target.innerHTML += foxyMensaje.charAt(i);
+      i++;
+      setTimeout(typeWriter, 25);
+    }
+  }
+  typeWriter();
+</script>
+
+</body>
+</html>

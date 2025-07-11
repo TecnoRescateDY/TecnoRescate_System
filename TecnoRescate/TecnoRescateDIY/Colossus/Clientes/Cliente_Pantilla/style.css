@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #333;
+}
+.container {
+  padding: 2rem;
+}
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.contacto h2 {
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+button {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.agenda {
+  margin-top: 3rem;
+}
+.agenda form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.agenda input, .agenda select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+.voz {
+  margin-top: 3rem;
+}
+.voz button {
+  margin-top: 1rem;
+  background: #0077cc;
+}
+.voz textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  resize: vertical;
+}

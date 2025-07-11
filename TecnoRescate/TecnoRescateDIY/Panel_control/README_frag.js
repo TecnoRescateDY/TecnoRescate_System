@@ -1,0 +1,1 @@
+const foxyMensaje = "Este módulo reúne todas las herramientas administrativas del sistema TecnoRescate DIY. Es el panel interno, con control de finanzas, tareas y clientes.";

@@ -1,0 +1,39 @@
+🚀 MODO_FOXY_AVANZADO [ON]
+Este nuevo modo queda oficialmente activado y forma parte del Kernel:
+
+🔧 ¿Qué es?
+MODO_FOXY_AVANZADO es una metodología de desarrollo asistido para TecnoRescate DIY, que combina:
+
+🎒 setup.bat / setup.sh para crear carpetas y archivos en sistemas locales
+
+🌲 Estructura en formato tree visible en consola
+
+🧩 Entrega uno a uno del contenido de cada archivo, con ubicación clara
+
+💾 Comando 💾siguiente para avanzar al siguiente bloque de código
+
+⚙️ Compatible con dispositivos sin conexión o sistemas reciclados
+
+📋 Procedimiento Estándar
+⚙️ Se genera un .zip con:
+
+setup.bat (estructura de módulo)
+
+📂 En consola se muestra el tree del proyecto
+
+🧠 Se entrega cada archivo:
+
+Nombre
+
+Ubicación
+
+Contenido completo
+
+🪄 Se avanza con 💾siguiente tras pegar manualmente
+
+🔁 Todo puede clonarse por carpeta para nuevos clientes
+
+🧱 Ejemplo Real Aplicado
+Ya fue utilizado exitosamente con:
+
+✅ Modulo_Turnos_Pro

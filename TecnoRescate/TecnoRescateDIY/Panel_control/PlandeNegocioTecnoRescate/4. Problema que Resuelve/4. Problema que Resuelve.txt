@@ -1,0 +1,28 @@
+Problema que Resuelve
+
+El proyecto Tecno-Rescate DIY aborda múltiples problemáticas interconectadas, tanto sociales como tecnológicas y ambientales.
+
++------------------------------+--------------------------------------------------------------------------+
+| Área del Problema            | Descripción                                                              |
++------------------------------+--------------------------------------------------------------------------+
+| Basura Electrónica           | Miles de dispositivos útiles terminan en desuso o son desechados sin    |
+|                              | reaprovechamiento, generando contaminación.                             |
++------------------------------+--------------------------------------------------------------------------+
+| Exclusión Tecnológica        | Muchas personas no acceden a dispositivos útiles por su precio o falta  |
+|                              | de conocimiento técnico.                                                |
++------------------------------+--------------------------------------------------------------------------+
+| Dependencia Comercial        | Asistentes virtuales actuales (Alexa, Google) requieren conexión total  |
+|                              | a sus ecosistemas, poca personalización, y escasa conciencia ecológica. |
++------------------------------+--------------------------------------------------------------------------+
+| Falta de Rutinas y Apoyo     | Personas con condiciones como TEA, ansiedad, etc., necesitan sistemas   |
+| personalizado                | empáticos que se adapten a su día a día y brinden estructura.           |
++------------------------------+--------------------------------------------------------------------------+
+| Subutilización del Conocimiento Técnico | Técnicos, reparadores y makers tienen conocimientos valiosos que no siempre |
+|                              | encuentran canales para generar ingresos o ayudar a otros.              |
++------------------------------+--------------------------------------------------------------------------+
+
+🧩 Este proyecto busca unir todos estos ejes para ofrecer una solución inclusiva, accesible y sustentable. En lugar de competir con lo comercial, **resuelve lo que lo comercial ignora**:  
+➡ la personalización real  
+➡ la reutilización consciente  
+➡ el acompañamiento humano  
+

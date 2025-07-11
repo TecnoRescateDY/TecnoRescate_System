@@ -1,0 +1,17 @@
+🧙‍♂️ FOXY_CONSOLA_LEEME.txt
+
+Este archivo HTML contiene una réplica estática y simbólica de la consola FOXY.
+Fue creado a partir de la bitácora registrada en el Kernel 6.1.
+
+📄 Archivo: foxy_consola.html
+📁 Usos posibles:
+- Página de bienvenida para TecnoRescate
+- Sección narrativa tipo 'Acerca de'
+- Referencia de origen del sistema Foxy
+
+💾 Cómo usar:
+1. Abrí foxy_consola.html en tu navegador.
+2. Si querés integrarlo en otro proyecto, copiá el contenido del <div class="consola">.
+3. Podés agregar estilos, animaciones o efectos usando CSS extra.
+
+Creado con cariño por Foxy & Adry 🦊🧙‍♂️

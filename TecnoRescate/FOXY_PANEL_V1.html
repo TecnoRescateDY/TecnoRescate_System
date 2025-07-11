@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🦊 FOXY - Mapa Modular Interactivo</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00FF00;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      text-shadow: 0 0 8px #00FF00;
+      margin-bottom: 40px;
+      animation: parpadeo 2s infinite;
+    }
+    @keyframes parpadeo {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+    .mapa {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .modulo {
+      border: 2px dashed #00FF00;
+      padding: 20px;
+      text-align: center;
+      background-color: black;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .modulo:hover {
+      background-color: #002200;
+      box-shadow: 0 0 12px #00FF00;
+      transform: scale(1.03);
+    }
+    a {
+      text-decoration: none;
+      color: #00FF00;
+      font-size: 18px;
+      display: block;
+    }
+    .icono {
+      font-size: 28px;
+      margin-bottom: 10px;
+      animation: flotar 2.5s ease-in-out infinite;
+    }
+    @keyframes flotar {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    .mensaje {
+      margin-top: 40px;
+      text-align: center;
+      font-style: italic;
+    }
+    .boton-consola {
+      grid-column: span 2;
+      padding: 15px;
+      background-color: #001100;
+      border: 2px solid #00FF00;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .boton-consola button {
+      background-color: black;
+      color: #00FF00;
+      border: 1px solid #00FF00;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+    .boton-consola button:hover {
+      background-color: #003300;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🦊 FOXY - Mapa Modular de la Madriguera</h1>
+
+<div class="mapa">
+
+  <div class="modulo">
+    <div class="icono">📁</div>
+    <a href="file:///D:/TecnoRescate/TecnoRescateDIY/Panel_control/administracion.html>">[1] Administración</a>
+  </div>
+
+  <div class="modulo">
+    <div class="icono">🔬</div>
+    <a href="file:///C:/TU_RUTA/TecnoRescate/Laboratorio">[2] Laboratorio</a>
+  </div>
+
+  <div class="modulo">
+    <div class="icono">🤖</div>
+    <a href="file:///D:/TecnoRescate/TecnoRescateDIY/Colossus/index.html">[3] Colossus - Pendrive_Boot & Landing Generator</a>
+  </div>
+
+  <div class="modulo">
+    <div class="icono">🗣️</div>
+    <a href="file:///D:/TecnoRescate/TecnoRescateDIY/SalaDeReuniones">[4] Sala de Reuniones</a>
+  </div>
+
+  <div class="modulo">
+    <div class="icono">💻</div>
+    <a href="file:///C:/TU_RUTA/TecnoRescate/GabineteComputacion">[5] Gabinete de Computación</a>
+  
+  </div>
+<div class="modulo">
+  <div class="icono">📘</div>
+  <a href="file:///C:/TU_RUTA/TecnoRescate/TecnoRescateDIY/README_TecnoRescate.html">[7]       	Mapa del Sistema</a>
+  </div>
+
+  <div class="modulo">
+    <div class="icono">🚪</div>
+    <a href="#" onclick="window.close()">[6] Salir del Panel</a>
+  </div>
+
+  <div class="boton-consola">
+    <button onclick="activarModoFoxy('FOXY_NEGOCIOS 🧑‍💼'); redirigirAChatGPT();">🔁 Activar FOXY_NEGOCIOS</button>
+  </div>
+
+</div>
+
+<script>
+  function activarModoFoxy(modo) {
+    const descripcion = "Asiste a Adry en monetización ética y automatización para negocios pequeños. Incluye Cliente Cero, Sistema AutoVenta, Monetización Ética, etc.";
+
+    fetch("https://script.google.com/macros/s/AKfycbyT6mwltQSB_HlO9VhM7mT0dzH78T2ZBACEjwg4M1ulXoVoHpVZuBbK14rV8T4DuIWh/exec", {
+      method: "POST",
+      body: JSON.stringify({ modo: modo, descripcion: descripcion }),
+      headers: { "Content-Type": "application/json" }
+    })
+    .then(r => r.text())
+    .then(msg => alert(msg))
+    .catch(err => alert("Error: " + err));
+  }
+
+  function redirigirAChatGPT() {
+    const prompt = encodeURIComponent("Foxy, activá el modo FOXY_NEGOCIOS 🧑‍💼");
+    window.open(`https://chat.openai.com/?prompt=${prompt}`, "_blank");
+  }
+</script>
+
+<div class="mensaje">
+  🦊 Foxy dice: "Cada nodo es una madriguera de posibilidades. ¡Explorá sin miedo!"
+</div>
+
+</body>
+</html>

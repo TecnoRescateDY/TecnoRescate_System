@@ -1,0 +1,36 @@
+♻️ PLAN ESTRATÉGICO – CLUB CERVECERO VIP
+Enfoque: Economía Circular + Cultura Cervecera Local
+
+1. Entrada al sistema mediante QR reutilizable
+
+Cada cervecería tiene un código QR físico impreso en materiales reciclados (madera, metal, cartón prensado).
+
+El QR da acceso al club y permite registrar visitas, sumar puntos y recibir beneficios.
+
+No se requiere papel o folletería impresa adicional.
+
+2. Fomento del reciclaje de botellas y latas
+
+Se premia a los usuarios que devuelven envases en puntos adheridos.
+
+El bot permite escanear un código o registrar entregas para sumar puntos.
+
+Se pueden canjear por pintas, merchandising reciclado o descuentos.
+
+3. Merchandising hecho con descarte
+
+Camisetas, posavasos o llaveros VIP hechos por artistas locales con tela reciclada, circuitos, madera o aluminio.
+
+Se vende o se canjea con puntos en el club.
+
+4. Intercambio local con productores
+
+Se integran pequeños productores (cerveza artesanal, snacks, fermentos, etc.) para cerrar el ciclo de producción y consumo local.
+
+Los usuarios pueden descubrir y apoyar emprendimientos del corredor nocturno.
+
+5. Consola o bot reciclado para eventos
+
+En eventos, se puede usar un "Totem Club VIP" hecho con tecnología recuperada (tablet vieja, router, mini PC) para mostrar niveles, premios o reproducir el QR.
+
+Visual estilo Foxy o retro para sumar identidad al sistema.

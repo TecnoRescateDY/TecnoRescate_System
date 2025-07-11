@@ -1,0 +1,45 @@
+🧠 MÓDULO FÍSICO PRINCIPAL – FOXYCORE_01
+
+📦 Objetivo:
+Diseñar una caja base modular, inspirada en diseño retro/terminal, que contenga y exhiba los componentes del núcleo del asistente Foxy. Este módulo reemplaza a soluciones como ESP32 usando hardware reciclado.
+
+📐 Dimensiones sugeridas:
+- Caja cúbica o rectangular
+- 12cm × 12cm × 10cm aprox (ajustable a componentes)
+- Ventanas laterales o superior con acrílico o transparencia
+- Base firme con puntos de anclaje (tornillos o imanes)
+
+🎨 Estética:
+- Estilo 8bit/retro-futurista
+- Logo de Foxy visible (grabado o impreso)
+- Cables visibles (estilo “entramado consciente”)
+- Terminal visual OLED en el frente
+- LED frontal de estado (verde/rojo)
+- Rejilla o soporte para micrófono tipo “studio retro”
+
+🔧 Componentes internos:
+
+| Componente       | Ubicación física         | Montaje sugerido       |
+|------------------|--------------------------|-------------------------|
+| RT5350F (placa hija) | Encajada sobre zócalo o base interna | Acceso desde arriba |
+| Placa NIP02&090_M | Base del sistema         | Tornillos o guía plástica |
+| ES8388 + FM8002B | Audio lateral (mic + parlante) | Rejilla o caja de eco |
+| Relay (opcional) | Lado derecho             | Conector rápido |
+| PIR sensor       | Parte superior frontal   | Lente estilo domo |
+| Pantalla OLED    | Frente visible central   | Montada en panel frontal |
+| Batería (pack 18650) | Parte inferior o lateral | Compartimento protegido |
+| Puerto UART (opcional) | Trasero o lateral   | Accesible por pin o USB-TTL |
+
+⚙️ Conexiones:
+- Cableado tipo jumper o flex plano
+- Espacio interno para manejar cables sin bloquear flujo de aire
+- Posibilidad de expansión GPIOs laterales
+
+📎 Notas adicionales:
+- Caja diseñada para ser mantenida, abierta y ampliada (filosofía TecnoRescate)
+- Puede tener tapa superior imantada o deslizable
+- Soporte opcional para botón físico de activación
+
+📁 Ubicación en sistema: /Foxy_Madriguera/Hardware_Integrado/FoxyCore_01/
+
+✍️ Diseñado por: Adry + Foxy

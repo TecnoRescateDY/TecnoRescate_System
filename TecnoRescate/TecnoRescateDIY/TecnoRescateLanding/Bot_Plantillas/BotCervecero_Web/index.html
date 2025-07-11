@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOT CERVECERO 🍻</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="consola">
+    <h1>🍻 BOT CERVECERO ACTIVADO 🍻</h1>
+    <div id="respuesta" class="pantalla">🤖 Hola, soy tu bot cervecero. ¿En qué puedo ayudarte hoy?</div>
+    
+    <div class="botonera">
+      <button onclick="mostrar('📍 Estamos en Calle Falsa 123, CerveCity 🍺')">📍 Ubicación del local</button>
+      <button onclick="mostrar('🍺 Nuestras cervezas: IPA, Lager, Stout, Honey, APA.')">📄 Ver menú de cervezas</button>
+      <button onclick="mostrar('📞 WhatsApp: +54 9 1234 567890 | Instagram: @cervebot')">📞 Contactar por WhatsApp</button>
+      <button onclick="mostrar('🛒 Para hacer tu pedido, escribinos por WhatsApp o completá el formulario online.')">🛒 Hacer un pedido</button>
+      <button onclick="mostrar('📅 Noche de música y birra artesanal - Sábado 21hs')">📅 Próximos eventos</button>
+      <button onclick="mostrarMapa()">🗺️ Ver mapa del local</button>
+    </div>
+
+    <div id="mapa" style="display: none; margin-top: 20px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.648471759144!2d-58.37641232502209!3d-34.641656676695654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6ab8188eb7%3A0xc7e2e94d285f9fc2!2sCervecer%C3%ADa%203Diez!5e0!3m2!1ses-419!2sar!4v1717437004184!5m2!1ses-419!2sar" 
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <footer style="margin-top: 30px; text-align: center; color: lime;">
+      ♻️[🧙‍♂️+🦊] en modo edición 🛠️
+      <br />
+      <a href="https://tecnorescatelanding.netlify.app" target="_blank" style="color: lime; font-weight: bold;">
+        🌐 TecnoRescate
+      </a>
+    </footer>
+  </div>
+
+  <script>
+    function mostrar(mensaje) {
+      document.getElementById('respuesta').textContent = mensaje;
+      document.getElementById('mapa').style.display = 'none';
+    }
+
+    function mostrarMapa() {
+      document.getElementById('respuesta').textContent = "📍 Estamos en Cervecería 3Diez. Mirá el mapa abajo 👇";
+      document.getElementById('mapa').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

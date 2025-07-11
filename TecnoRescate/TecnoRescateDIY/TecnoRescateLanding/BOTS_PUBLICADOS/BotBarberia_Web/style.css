@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Courier New', monospace;
+  color: #a3ff73;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.consola {
+  border: 2px solid #6eff6a;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  background-color: #000000;
+  box-shadow: 0 0 15px #4caf50;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #cbff99;
+}
+
+.pantalla {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid #6eff6a;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  min-height: 60px;
+}
+
+.botonera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  background-color: black;
+  color: #a3ff73;
+  border: 1px solid #6eff6a;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0f3;
+  color: black;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.75em;
+  color: #57d857;
+}

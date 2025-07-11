@@ -1,0 +1,76 @@
+### 🧪 Informe Técnico Detallado: Reparación de Fuente Switching
+
+**Cliente:** Renzo ♻️ Rescatista  
+**Equipo:** Parlante Amplificador Marca: Overtech LA-130s  
+**Fecha:** 12 de abril de 2025
+
+---
+
+#### 🔬 1. Observación Inicial
+
+El cliente reporta que el equipo no enciende. Se verifica que la fuente switching de la placa no presenta signos externos de daño visibles, salvo una sospechosa ausencia de continuidad en el fusible F1. Se observa que el diodo D12 no está presente, pero se comprueba con imágenes de otras placas que el diseño original tampoco lo incluye.
+
+---
+
+#### 🧠 2. Hipótesis
+
+1. El fusible F1 se abrió por una sobrecorriente.  
+2. Componentes en la etapa primaria pudieron haber fallado (MOSFET, diodos, capacitores, IC de control).  
+3. Puede tratarse de una falla inducida por factores externos (mala conexión, sobrecarga, humedad, etc.).
+
+---
+
+#### 🔍 3. Experimentación / Diagnóstico
+
+**Multímetro usado:** Tester digital genérico con función de diodo/continuidad.  
+**Modo:** Medición en frío (sin energizar la placa).
+
+| Componente | Medición (modo diodo) | Valor esperado | Resultado real | Estado |
+|------------|------------------------|----------------|----------------|--------|
+| F1 (Fusible) | Continuidad | PITIDO | No hay continuidad | 🔥 Falla |
+| C1 | Entre pines | No pitido, carga | Valor ~500, sin pitido | ✅ OK |
+| Q1 (MOS1) | Drain-Source | ~500 mV inverso | ~500-600 mV | ✅ OK |
+| IC (6 pines) | BP-Source / FB-Source | Sin pitido | Sin pitido | ✅ OK |
+| D2, D4, D11, D13 | Directa/Inversa | ~500 mV / sin pitido | ~500 mV / sin pitido | ✅ OK |
+| C10, C11, C12 | Directa/Inversa | Sin continuidad directa | ~500 mV / sin pitido | ✅ OK |
+| D12 | Ausente | Según diseño | Ausente también en otras placas | ✅ OK |
+
+**Notas:** No se detectaron cortos ni fugas visibles. Todos los componentes activos y pasivos de la etapa primaria están en valores esperados.
+
+---
+
+#### 📈 4. Análisis de Resultados
+
+- La única falla detectada es el fusible abierto.  
+- No hay evidencia de cortos ni de sobrecalentamiento en componentes principales.  
+- El MOSFET principal y el IC de control se encuentran dentro de parámetros esperados.  
+
+---
+
+#### 💡 5. Conclusión
+
+La causa de la falla fue la apertura del fusible F1, posiblemente debido a una sobrecorriente provocada por un evento externo. El resto de los componentes clave de la fuente se encuentran en buen estado.
+
+---
+
+#### 🛠️ 6. Acción Correctiva
+
+- Se procederá al reemplazo del fusible F1.  
+- Como medida preventiva, se sugiere probar el equipo con una serie limitadora (lámpara en serie o carga resistiva), y conectar a una zapatilla con llave de corte y fusible para evitar futuros eventos destructivos.
+
+---
+
+#### 🧰 7. Verificación Final (a realizar tras reparación)
+
+- Conexión con fusible nuevo y monitoreo de consumo en arranque.  
+- Verificación de tensiones de salida en los puntos clave.  
+- Ensayo funcional del equipo conectado a carga real.
+
+---
+
+### 👨‍🔧 Foxy Reporta:
+
+"¡Hola! Soy Foxy 🦊 de TecnoRescate, y hoy aprendimos que no siempre una fuente fallada tiene componentes explotados. A veces, un simple fusible hace todo el trabajo de protección, ¡pero hay que saber cómo y por qué se activó! Este informe técnico nos permite dejar constancia, y repetir la metodología en futuros rescates. ¡Seguimos rescatando tecnología y preservando la naturaleza!"
+
+🧢 *Foxy con su gorra de TecnoRescate*
+

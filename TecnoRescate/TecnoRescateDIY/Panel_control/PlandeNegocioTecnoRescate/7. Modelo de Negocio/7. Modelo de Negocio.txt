@@ -1,0 +1,26 @@
+Modelo de Negocio
+
+El modelo de negocio de Tecno-Rescate DIY combina reciclaje, educación, servicio técnico y tecnología adaptativa, de forma sustentable y accesible.
+
++------------------------------------+---------------------------------------------------------------+
+| Fuente de Ingreso                  | Descripción                                                   |
++------------------------------------+---------------------------------------------------------------+
+| 🧰 Servicios técnicos reciclados   | Reparación de equipos, armado de asistentes personalizados,   |
+|                                    | instalación de rutinas y configuraciones según el usuario.    |
++------------------------------------+---------------------------------------------------------------+
+| 📦 Kits DIY y módulos educativos   | Venta de kits con materiales rescatados + guías paso a paso   |
+|                                    | para armar asistentes virtuales en casa o talleres.           |
++------------------------------------+---------------------------------------------------------------+
+| 🎓 Talleres y formaciones          | Capacitaciones sobre reciclaje electrónico, armado DIY, uso   |
+|                                    | de IA responsable y tecnologías inclusivas.                   |
++------------------------------------+---------------------------------------------------------------+
+| 🔁 Intercambio y donación circular | Red de recuperación de hardware en desuso (donación o canje), |
+|                                    | con reinversión en nuevos equipos funcionales.                |
++------------------------------------+---------------------------------------------------------------+
+| 🤝 Apoyo institucional / ONG       | Alianzas con escuelas, centros terapéuticos y organizaciones  |
+|                                    | que financien o adopten el sistema para sus usuarios.         |
++------------------------------------+---------------------------------------------------------------+
+
+Este modelo no busca escalar en volumen, sino en **impacto local, replicabilidad y sostenibilidad**.  
+Cada equipo armado, cada rutina diseñada, cada taller dado… **es una victoria para el ambiente y para la inclusión**.  
+

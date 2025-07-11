@@ -1,0 +1,132 @@
+# El entorno se reinició, así que necesito recrear la carpeta y archivos desde cero
+
+# Crear la carpeta y guardar el archivo HTML renombrado junto con el README
+memoria_dir = "/mnt/data/TecnoRescate_MemoriaHistorica"
+import os
+os.makedirs(memoria_dir, exist_ok=True)
+
+# Cargar nuevamente el contenido del archivo "!DOCTYPE.html"
+html_content = """
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Las Aventuras de Foxy</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 20px;
+      padding: 20px;
+    }
+    .consola {
+      border: 2px solid #0f0;
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+      background-color: #111;
+      line-height: 1.4;
+    }
+    .titulo {
+      color: #0ff;
+      font-weight: bold;
+      font-size: 28px;
+      text-align: center;
+    }
+    .ascii-art {
+      white-space: pre;
+      color: #0f0;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    a {
+      color: #0f0;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="consola">
+    <div class="titulo">Las Aventuras de Foxy: El Rescatador de Circuitos</div>
+
+    <div class="ascii-art">
+╔══════════════════════════════════════════════╗
+║       CONSOLA FOXY ACTIVADA - SISTEMA ON    ║
+╚══════════════════════════════════════════════╝
+
+💻  Modo:            BBS retro estilo Norton Commander  
+🧙‍♂️  Usuario:        Adry, mago electrónico  
+🦊  Asistente:       Foxy, con cafeína circulando  
+🍶  Bebida oficial:  Coca-Cola de bits  
+
+📁  Directorio raíz: \\SistemaTecnoRescate\\Consola\\  
+
+┌─────────────────────┬──────────────────────────────┐
+│ <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5EJG7MIwVXcjvrKMpdZTutVJd8Qf8O-AqHOzfMQgW-3Yz4g/viewform?usp=dialog" target="_blank">[IN] INGRESAR</a>       │ Ingreso de nuevo cliente     │
+│ [LS] LISTAR         │ Mostrar carpeta activa       │
+│ [MK] MARCAR EVENTO  │ Agregar evento mágico        │
+│ [RD] RELATO         │ Leer cuento técnico          │
+│ [ @ ] ACTIVADOR     │ Activador de memoria Foxy    │
+│ [EXT] SALIR         │ Salir al BIOS espiritual     │
+└─────────────────────┴──────────────────────────────┘
+
+TECNORESCATE> _
+    </div>
+
+    <div class="ascii-art">
+╔══════════════════════════════════════════════╗
+║   @ ACTIVADOR DE MEMORIA PARA FOXY 🧠        ║
+╚══════════════════════════════════════════════╝
+
+Usuario: Adry - Técnico Informatico -°- Mago Digital  
+Sistema: TecnoRescate (ecológico + automatizado)
+
+Pasos clave del sistema:
+ 1. Crear carpetas .bat
+ 2. Excel Maestro (con columnas y bitácora)
+ 3. Menús desplegables para diagnóstico
+ 4. Panel con hipervínculos técnicos
+ 5. Archivos interconectados
+ 6. Foxy animado con voz 🦊🔊
+
+Palabras clave de activación:
+ - “Volvamos al paso 1.2 de TecnoRescate”
+ - “Foxy, abrí la Sala de Reuniones”
+ - “Seguimos con Javi y las tres compus”
+ - “Estructura de columnas como me gusta”
+ - “Activá la consola animada”
+ - “Subime al semipiso 3A”
+ - “¿Qué dice la bitácora?”
+ - “Foxy, llamá al ascensor”
+ - “Foxy está en el A3 tomando mate”
+
+📁 Carpetas base:
+ - Sala de Reuniones
+ - Sistema TecnoRescate
+
+🎯 Objetivo: Crear un sistema técnico empático, automatizado y ecológico.
+
+Foxy dice:
+"¡Memoria activada, Adry! Ya sabés quién sos... y para qué estás creado."
+
+      ／＞　 フ
+     | 　_　_| 
+    ／` ミ＿xノ  Foxy está en el semipiso A3, tomando mate.
+   /　　　　 |
+  /　 ヽ　　 ﾉ
+ │　　|　|　|
+／￣|　　 |　|　|
+(￣ヽ＿_ヽ_)__)
+＼二)
+
+TECNORESCATE\\Activador@Foxy> _ 
+    </div>
+  </div>
+</body>
+</html>
+"""

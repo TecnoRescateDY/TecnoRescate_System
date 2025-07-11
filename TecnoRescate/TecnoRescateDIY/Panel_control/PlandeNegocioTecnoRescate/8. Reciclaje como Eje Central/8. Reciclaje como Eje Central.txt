@@ -1,0 +1,29 @@
+Reciclaje como Eje Central
+
+Tecno-Rescate DIY nace de la necesidad de **darle una segunda vida a la tecnología descartada**, recuperando componentes útiles y resignificándolos.
+
+Este eje no es un accesorio del proyecto, es su **columna vertebral**.
+
++---------------------------------------+--------------------------------------------------------------+
+| Acción                               | Detalle                                                      |
++---------------------------------------+--------------------------------------------------------------+
+| 🔍 Recolección selectiva             | Se identifican dispositivos útiles en la chatarra digital:   |
+|                                       | routers, PCs viejas, tablets, celulares, impresoras, etc.    |
++---------------------------------------+--------------------------------------------------------------+
+| 🧩 Revalorización funcional          | Se desarman, testean y adaptan piezas para nuevas funciones: |
+|                                       | botones físicos, pantallas de rutina, sensores, placas base. |
++---------------------------------------+--------------------------------------------------------------+
+| 🧠 Diseño abierto y modular          | El sistema se arma con componentes intercambiables, pensados |
+|                                       | para ser reparados o reemplazados fácilmente.                |
++---------------------------------------+--------------------------------------------------------------+
+| 🔁 Economía circular                 | Se promueve el canje de equipos rotos por crédito, piezas o  |
+|                                       | asistencia técnica.                                          |
++---------------------------------------+--------------------------------------------------------------+
+| 🌍 Educación y cultura ecológica     | Cada instalación, taller o cliente recibe información sobre  |
+|                                       | cómo reducir su huella electrónica.                          |
++---------------------------------------+--------------------------------------------------------------+
+
+Este enfoque no solo ayuda al planeta.  
+También **reduce costos, empodera comunidades técnicas** y crea un círculo virtuoso donde lo que antes era basura…  
+**hoy es parte de una solución tecnológica que acompaña personas**.
+

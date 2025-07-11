@@ -1,0 +1,44 @@
+import pandas as pd
+
+# Crear estructura de hojas como base en un Excel (representación simulada)
+inventario_data = {
+    "N° de Orden": ["TR-0001", "TR-0002"],
+    "Tipo de Dispositivo": ["Notebook", "Smartphone"],
+    "Estado": ["En Proceso", "No Reparado"],
+    "Fecha de Ingreso": ["2025-04-20", "2025-04-21"],
+    "Ver Reparación": [
+        '=HYPERLINK("#\'Historial Reparación\'!A2", "Ver")',
+        '=HYPERLINK("#\'Historial Reparación\'!A3", "Ver")'
+    ],
+    "Ir a Reciclaje": [
+        "",
+        '=HYPERLINK("#\'Reciclaje\'!A2", "Ir a Reciclaje")'
+    ]
+}
+
+historial_data = {
+    "N° de Orden": ["TR-0001"],
+    "Tarea Realizada": ["Cambio de disco"],
+    "Costo": [3000],
+    "Fecha Reparación": ["2025-04-21"]
+}
+
+reciclaje_data = {
+    "N° de Orden": ["TR-0002"],
+    "Componentes Reutilizables": ["Pantalla, batería"],
+    "Fecha Reciclaje": ["2025-04-22"]
+}
+
+# Crear DataFrames
+df_inventario = pd.DataFrame(inventario_data)
+df_historial = pd.DataFrame(historial_data)
+df_reciclaje = pd.DataFrame(reciclaje_data)
+
+# Guardar en un archivo Excel con varias hojas
+file_path = "/mnt/data/TecnoRescate_Base_Hipervinculos.xlsx"
+with pd.ExcelWriter(file_path, engine='xlsxwriter') as writer:
+    df_inventario.to_excel(writer, sheet_name="Inventario", index=False)
+    df_historial.to_excel(writer, sheet_name="Historial Reparación", index=False)
+    df_reciclaje.to_excel(writer, sheet_name="Reciclaje", index=False)
+
+file_path

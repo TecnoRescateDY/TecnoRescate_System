@@ -1,0 +1,43 @@
+🧠 MÓDULO DE HARDWARE – FOXY
+
+Nombre del módulo: RT5350F_CamIP
+Ubicación sugerida: /Foxy_Madriguera/Hardware_Integrado/RT5350F_CamIP/
+
+🧩 Descripción general:
+Placa principal extraída de una cámara IP motorizada 360°, con chip Ralink RT5350F.
+Se reutiliza como núcleo de procesamiento alternativo al ESP32.
+
+🔎 Componentes identificados:
+- SoC: Ralink RT5350F (CPU MIPS 360 MHz, Wi-Fi integrado)
+- Memoria Flash: MX25L6406E (8MB, SPI NOR)
+- RAM: SDRAM externa (16x16, 32MB aprox)
+- Salida de motor: ULN2803AG
+- UART: 4 pines etiquetados (3.3V, GND, TX, RX)
+- IR + Micrófono integrados
+
+🔌 Acceso por consola serial:
+- Adaptador: CH340G / CP2102
+- Baudrate: 115200 (probar 57600 también)
+- Software: PuTTY / Minicom / screen
+- Intentar acceso con: root / admin / sin clave
+
+📦 Funcionalidades mapeadas:
+| Función              | Estado     | Observaciones                      |
+|----------------------|------------|------------------------------------|
+| Wi-Fi                | ✅ Activa   | Incluida en el RT5350F             |
+| GPIO                 | ✅ Parcial  | Hasta 28 disponibles               |
+| Serial (UART)        | ✅ Funcional| Verificada                         |
+| PWM                  | ⚠️ Limitada | Requiere mapeo                     |
+| Linux embebido       | ✅ Posible  | Busybox / OpenWRT posibles         |
+| Reemplazo de ESP32   | ✅ Parcial  | Requiere rediseño de periferia     |
+
+🎯 Objetivo:
+Integrar esta placa como cerebro auxiliar (o principal) de Foxy. Se aprovechará su potencia, Wi-Fi y capacidad de programación para reemplazar microcontroladores dedicados, con base en hardware reciclado.
+
+📎 Estado actual:
+- Analizada físicamente bajo microscopio
+- Chips identificados y documentados
+- Header UART expuesto
+- Listo para pruebas de consola e inyección de sistema
+
+✍️ Registrado por: Adry (Técnico creador del sistema Colossus)

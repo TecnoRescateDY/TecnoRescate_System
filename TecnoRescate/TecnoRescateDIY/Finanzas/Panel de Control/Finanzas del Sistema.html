@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>💰 FOXY - Finanzas y Movimiento</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00FF00;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      text-shadow: 0 0 8px #00FF00;
+    }
+    .panel {
+      border: 2px solid #00FF00;
+      padding: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px dashed #00FF00;
+      padding: 8px;
+      text-align: center;
+    }
+    .positivo { color: #00FF00; }
+    .negativo { color: #FF4444; }
+    .mensaje {
+      margin-top: 30px;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>💰 FOXY - Finanzas del Sistema</h1>
+
+<div class="panel">
+  <p>📒 Registro manual de movimientos financieros:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Descripción</th>
+        <th>Tipo</th>
+        <th>Monto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-05-16</td>
+        <td>Venta de reparación</td>
+        <td class="positivo">Ingreso</td>
+        <td>$5000</td>
+      </tr>
+      <tr>
+        <td>2025-05-15</td>
+        <td>Compra de repuestos</td>
+        <td class="negativo">Egreso</td>
+        <td>-$1500</td>
+      </tr>
+      <tr>
+        <td>2025-05-14</td>
+        <td>Pago de dominio web</td>
+        <td class="negativo">Egreso</td>
+        <td>-$800</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Balance Total</strong></td>
+        <td><strong>$2700</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="mensaje">
+    🦊 Foxy dice: "Controlar el flujo te permite mejorar tu circuito financiero."
+  </div>
+</div>
+
+<!-- COMENTARIO:
+En versiones futuras podés agregar:
+- Formulario para cargar nuevos movimientos
+- Botones para filtrar por tipo
+- Cálculo automático con JS o conexión a Google Sheets
+-->
+
+</body>
+</html>

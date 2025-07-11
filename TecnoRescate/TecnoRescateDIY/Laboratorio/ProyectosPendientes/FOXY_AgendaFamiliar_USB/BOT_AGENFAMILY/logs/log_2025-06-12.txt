@@ -1,0 +1,14 @@
+INFO:root:[23:23:53] BOT_AGENFAMILY iniciado.
+INFO:root:[23:23:53] Iniciando sincronizaci�n...
+INFO:root:[23:23:53] Calendario sincronizado exitosamente.
+INFO:root:[23:23:53] Verificando alertas programadas...
+INFO:root:[23:23:53] Alerta activa: Reunión escolar a las 18:00
+INFO:root:[23:23:53] Alerta activa: Cumpleaños de Mica
+INFO:root:[23:23:53] Alerta activa: Ir al médico - jueves 10hs
+INFO:root:[23:27:04] BOT_AGENFAMILY iniciado.
+INFO:root:[23:27:04] Iniciando sincronizaci�n...
+INFO:root:[23:27:04] Calendario sincronizado exitosamente.
+INFO:root:[23:27:04] Verificando alertas programadas...
+INFO:root:[23:27:04] Alerta activa: Reunión escolar a las 18:00
+INFO:root:[23:27:04] Alerta activa: Cumpleaños de Mica
+INFO:root:[23:27:04] Alerta activa: Ir al médico - jueves 10hs

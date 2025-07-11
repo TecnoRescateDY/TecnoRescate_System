@@ -1,0 +1,27 @@
+Clientes Objetivo
+
+Tecno-Rescate DIY está pensado para distintos tipos de usuarios y comunidades que comparten un problema común:  
+el acceso limitado a soluciones tecnológicas personalizadas, sustentables y económicas.
+
++--------------------------------------+-----------------------------------------------------------------------+
+| Perfil                              | Características                                                       |
++--------------------------------------+-----------------------------------------------------------------------+
+| 🧩 Familias con integrantes TEA /    | Buscan herramientas que ayuden a estructurar rutinas diarias de forma |
+| neurodivergencias                   | empática, flexible y no invasiva. Valoran lo terapéutico y simple.    |
++--------------------------------------+-----------------------------------------------------------------------+
+| 👨‍🔧 Técnicos, Makers y Reparadores  | Interesados en reutilizar hardware viejo. Pueden replicar y mejorar   |
+|                                     | el sistema. Lo ven como fuente de ingresos o talleres comunitarios.   |
++--------------------------------------+-----------------------------------------------------------------------+
+| 🌱 Ecologistas y usuarios conscientes| Buscan reducir su impacto ambiental. Valoran proyectos sustentables,  |
+|                                     | locales y sin dependencia de grandes empresas.                        |
++--------------------------------------+-----------------------------------------------------------------------+
+| 🏠 Zonas rurales o desconectadas     | Necesitan soluciones offline o de baja dependencia tecnológica.       |
+|                                     | Aprecian el soporte técnico local, y la reutilización de equipos.     |
++--------------------------------------+-----------------------------------------------------------------------+
+| 🏫 Espacios educativos alternativos | Escuelas técnicas, talleres de reciclaje, instituciones de inclusión. |
+|                                     | Lo usan como base para enseñanza y formación en valores ecológicos.   |
++--------------------------------------+-----------------------------------------------------------------------+
+
+Este sistema no apunta al “consumo masivo”, sino al **impacto real en comunidades específicas**.  
+Son personas que no buscan lo más nuevo… sino lo que **realmente les sirva**. Y ahí es donde Tecno-Rescate DIY brilla. ✨
+

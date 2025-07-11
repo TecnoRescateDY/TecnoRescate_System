@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>🧠 FOXY - Generador de Boot Personalizado</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background: black;
+      color: #00FF00;
+      padding: 2rem;
+      font-size: 1.1rem;
+    }
+    h1 { font-size: 2rem; color: #00ffaa; }
+    h2 { color: #0ff; margin-top: 2rem; }
+    label { display: block; margin-top: 10px; }
+    input, select {
+      padding: 5px;
+      font-family: monospace;
+      background: #111;
+      color: #0f0;
+      border: 1px solid #0f0;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .total {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      color: yellow;
+    }
+    button {
+      margin: 10px 10px 0 0;
+      background: #0f0;
+      color: black;
+      padding: 10px 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background: #111;
+      padding: 20px;
+      border: 1px dashed #0f0;
+    }
+    .section {
+      border: 1px solid #0f0;
+      padding: 15px;
+      margin-top: 20px;
+      background: #0a0a0a;
+    }
+  </style>
+</head>
+<body>
+  <h1>🦊 FOXY Generator v1.1 - Colossus Tools</h1>
+
+  <label>👤 Nombre del cliente:</label>
+  <input type="text" id="nombreCliente" placeholder="Ej: Cervecería 3Diez" />
+
+  <label>📦 Plantilla base:</label>
+  <select id="plantillaBase">
+    <option value="BotCervecero_Web.txt">BotCervecero_Web</option>
+    <option value="BotBarberia_Web.txt">BotBarberia_Web</option>
+    <option value="BotDelibery_web.txt">BotDelibery_web</option>
+    <option value="BotServicioProfesional_Web.txt">BotServicioProfesional_Web</option>
+    <option value="Bot_Presupuesto_ASCII.txt">Bot_Presupuesto_ASCII</option>
+  </select>
+
+  <h2>🧩 Módulos seleccionables</h2>
+  <form id="formulario">
+    <label><input type="checkbox" value="4500" data-label="Landing Básica" data-desc="Presentación simple con contacto."> Landing Básica ($4.500)</label>
+    <label><input type="checkbox" value="6500" data-label="Landing Pro" data-desc="Diseño avanzado + links sociales y botón WhatsApp."> Landing Pro ($6.500)</label>
+    <label><input type="checkbox" value="2000" data-label="Carta Interactiva" data-desc="Menú editable desde el celular."> Carta Interactiva ($2.000)</label>
+    <label><input type="checkbox" value="1500" data-label="Botón de reservas" data-desc="Botón para reservar por WhatsApp."> Botón de reservas ($1.500)</label>
+    <label><input type="checkbox" value="2500" data-label="Formulario de contacto" data-desc="Formulario online conectado a WhatsApp o correo."> Formulario de contacto ($2.500)</label>
+    <label><input type="checkbox" value="1000" data-label="Diseño personalizado" data-desc="Colores y logos adaptados al negocio."> Diseño personalizado ($1.000)</label>
+    <label><input type="checkbox" value="1500" data-label="Código QR" data-desc="QR para escanear desde afiches o cartas."> Código QR ($1.500)</label>
+    <label><input type="checkbox" value="3000" data-label="Agenda de turnos" data-desc="Formulario de reserva con horarios y confirmación."> Agenda de turnos ($3.000)</label>
+    <label><input type="checkbox" value="2500" data-label="Panel de seguimiento" data-desc="Panel para seguir pedidos, pacientes o tareas."> Panel de seguimiento ($2.500)</label>
+    <label><input type="checkbox" value="2000" data-label="Presupuestador Técnico" data-desc="Formulario editable que genera texto ASCII por WhatsApp."> Presupuestador Técnico ($2.000)</label>
+    <label><input type="checkbox" value="3500" data-label="Dictado de voz" data-desc="Módulo de entrada de voz y conversión a texto."> Dictado de voz ($3.500)</label>
+    <label><input type="checkbox" value="1500" data-label="Estadísticas básicas" data-desc="Informe mensual simple de visitas o clics."> Estadísticas básicas ($1.500)</label>
+  </form>
+
+  <div class="total">💸 Total: $<span id="total">0</span></div>
+
+  <div class="section">
+    <h2>📋 Resultado (Presupuesto o Instrucción FOXY)</h2>
+    <div class="output" id="salida"></div>
+
+    <button onclick="generarTexto()">🧾 Generar presupuesto</button>
+    <button onclick="generarInstrucciones()">🤖 Generar instrucciones FOXY</button>
+    <button onclick="copiarTexto()">📋 Copiar texto</button>
+    <button onclick="descargarTexto()">💾 Descargar .txt</button>
+    <button onclick="borrarSalida()">🗑️ Borrar</button>
+  </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const total = document.getElementById('total');
+    const salida = document.getElementById('salida');
+    const nombreCliente = document.getElementById('nombreCliente');
+    const plantillaBase = document.getElementById('plantillaBase');
+
+    function calcularTotal() {
+      let suma = 0;
+      checkboxes.forEach(c => { if (c.checked) suma += parseInt(c.value); });
+      total.textContent = suma;
+    }
+
+    checkboxes.forEach(c => c.addEventListener('change', calcularTotal));
+
+    function generarTexto() {
+      const nombre = nombreCliente.value || "Cliente Sin Nombre";
+      let modulos = [];
+      checkboxes.forEach(c => { if (c.checked) modulos.push(`- ${c.dataset.label} ($${c.value}): ${c.dataset.desc}`); });
+      const mensaje = `✅ Presupuesto para ${nombre}:\n\nIncluye:\n${modulos.join('\n')}\n\n💸 Total: $${total.textContent}\n\nConsultanos si querés sumar más funciones. 😉`;
+      salida.textContent = mensaje;
+    }
+
+    function generarInstrucciones() {
+      const nombre = nombreCliente.value || "ClienteSinNombre";
+      const plantilla = plantillaBase.value;
+      let modulos = [];
+      checkboxes.forEach(c => { if (c.checked) modulos.push(`- ${c.dataset.label}: ${c.dataset.desc}`); });
+      const mensaje = `[FOXY_HTML_LOCAL]\n\nQuiero generar un bot para: ${nombre}\n\n🧱 Plantilla base: ${plantilla}\n📁 Carpeta destino: ${nombre}/\n\n🧩 Módulos:\n${modulos.join('\n')}\n\nDiseño modular, funcional y optimizado para celulares.`;
+      salida.textContent = mensaje;
+    }
+
+    function copiarTexto() {
+      const texto = salida.textContent;
+      if (!texto) return alert("⚠️ No hay texto para copiar.");
+      navigator.clipboard.writeText(texto).then(() => alert("✅ Copiado al portapapeles."));
+    }
+
+    function borrarSalida() {
+      salida.textContent = "";
+      total.textContent = "0";
+    }
+
+    function descargarTexto() {
+      const blob = new Blob([salida.textContent], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = nombreCliente.value.trim() || "foxy_output.txt";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

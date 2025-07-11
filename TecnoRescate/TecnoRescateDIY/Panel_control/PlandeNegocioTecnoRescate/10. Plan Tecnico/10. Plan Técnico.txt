@@ -1,0 +1,47 @@
+Plan Técnico
+
+El Asistente Virtual DIY se construye utilizando hardware reciclado y componentes modulares, adaptables a las necesidades del usuario final. 
+
+🔧 **Requerimientos mínimos de hardware**:
+1. **Placa base**: Router viejo, placa madre de PC, ESP32 o Raspberry Pi
+   - Fuente de alimentación: 5V, 2A (usualmente adaptador de celular o fuente de PC)
+   - Conexión: USB o GPIO para botones físicos
+
+2. **Sensores y periféricos**:
+   - Sensores de movimiento, temperatura o luz (opcional, dependiendo de la configuración)
+   - Pantalla LCD o OLED (de 16x2 o mayor tamaño, depende del modelo)
+   - Botones físicos (Switch, push-button) para interactividad
+
+3. **Conexiones**:
+   - **Conexión WiFi** (si el modelo usa Internet para conectar a IA externa)
+   - **Puertos GPIO** para botones, sensores y salidas (si es necesario)
+
+4. **Almacenamiento**:
+   - **Memoria**: 32MB mínimo (puede ser EEPROM, SD card o almacenamiento interno)
+   - **Almacenamiento para datos**: Google Sheets o almacenamiento local en EEPROM
+
+5. **Software y sistema operativo**:
+   - **Sistema operativo base**: Raspberry Pi OS, Linux, o firmware basado en ESP32
+   - **Lenguajes y plataformas**:
+     - **HTML, JavaScript, Python** (para crear la interfaz y control de la consola)
+     - **Frameworks y bibliotecas**: Flask (para backend), GPIO o Adafruit para sensores
+
+📦 **Fuentes de hardware recomendadas**:
+- **MercadoLibre**: Venta de componentes electrónicos usados o reciclados, a buen precio.
+- **eBay**: Dispositivos de segunda mano (router, computadoras viejas).
+- **Tiendas locales de electrónica**: Componentes básicos como cables, sensores, pantallas.
+- **Chatarra digital**: Reciclaje de equipos viejos, donaciones o reparaciones.
+
+🔌 **Conexión de hardware**:
+- Se utilizarán cables jumper o puentes para conectar botones, sensores y pantallas a las placas base (ej: ESP32, Raspberry Pi).
+- Los botones físicos activarán rutinas o cambiarán de estado el sistema. 
+
+🔄 **Proceso de ensamblaje**:
+1. **Desarmado**: Extraer componentes útiles de dispositivos viejos (pantallas, botones, sensores).
+2. **Conexión**: Ensamblar y conectar los componentes a la placa base.
+3. **Programación**: Instalar sistema operativo y configurar la consola interactiva.
+4. **Pruebas**: Testear hardware, conectividad y sensores antes de la integración final.
+
+🌍 **Sostenibilidad y reciclaje**:
+El uso de componentes reciclados y la reutilización de equipos no solo es económico, sino que **genera un impacto ambiental positivo** al reducir la cantidad de residuos electrónicos.
+

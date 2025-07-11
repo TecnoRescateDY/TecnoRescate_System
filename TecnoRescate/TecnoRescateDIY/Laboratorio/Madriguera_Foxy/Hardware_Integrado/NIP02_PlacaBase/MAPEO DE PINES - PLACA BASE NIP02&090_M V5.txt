@@ -1,0 +1,31 @@
+📍 MAPEO DE PINES - PLACA BASE NIP02&090_M V5
+Ubicación: /Foxy_Madriguera/Laboratorio/NIP02_IO_Map.txt
+Estado: En observación experimental
+
+🧪 Descripción:
+Este archivo documenta los pines visibles, funciones asignadas y pruebas prácticas en curso sobre la placa base de la cámara IP reciclada. Ideal para identificar entradas/salidas útiles para el sistema Foxy.
+
+🔌 PINES IDENTIFICADOS
+
+| Etiqueta | Tipo     | Función estimada                | Observaciones                  |
+|----------|----------|----------------------------------|--------------------------------|
+| RST      | Entrada  | Reset del sistema               | Pulsador momentáneo a GND     |
+| YLED     | Salida   | Indicador LED amarillo          | Puede usarse como status GPIO |
+| RLY2     | Salida   | Relé 2 (control de sirena)      | Confirmar con LED + resistencia |
+| ALM      | Entrada* | Señal de alarma externa         | Posible trigger por voltaje   |
+| UART TX  | Salida   | Consola serial desde RT5350F    | Probado, 115200 baud          |
+| UART RX  | Entrada  | Consola serial hacia RT5350F    | Confirmado                    |
+| GND      | -        | Tierra común                    | Conectado a sistema completo  |
+| 3.3V     | -        | Alimentación lógica             | Usar con cuidado              |
+
+📎 Notas:
+- Se recomienda usar multímetro en voltaje DC para verificar comportamiento de cada pin al bootear.
+- En caso de usar relés reales, colocar diodo de protección.
+- UART funcional con adaptador USB-TTL (3.3V).
+
+🛠️ Próximas pruebas:
+- Confirmar estado de ALM con entrada externa
+- Mapear número de GPIO asociado a YLED y RLY2 en consola
+- Verificar si hay pines I2C disponibles para expansión OLED
+
+✍️ Registrado por: Adry – Laboratorio Foxy

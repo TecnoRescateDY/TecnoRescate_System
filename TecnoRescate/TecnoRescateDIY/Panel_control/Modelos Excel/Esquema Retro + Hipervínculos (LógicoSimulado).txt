@@ -1,0 +1,40 @@
+                       ╔═══════════════════════╗
+                       ║   Formulario Cliente  ║
+                       ║  (Google Forms / App) ║
+                       ║ [Enlace: ver respuestas]──┐
+                       ╚═══════════════════════╝   │
+                                 │                 │
+                                 ▼                 │
+                    ╔═════════════════════════════╗
+                    ║ TecnoRescate_maestro.xlsx   ║
+                    ╠═════════════════════════════╣
+                    ║ 🟢 Hoja: Inventario          ║ ◄─┘ [IMP: Respuestas -> Inventario]
+                    ║     - N° de Orden           ║
+                    ║     - Tipo, Estado, Fecha   ║
+                    ║     [Vincular a Historial]──┐
+                    ╠═════════════════════════════╣ │
+                    ║ 🟡 Hoja: Historial Reparación║ │
+                    ║     - N° de Orden           ║ │
+                    ║     - Tareas, Costos        ║◄┘ ← [Usar HYPERLINK al detalle de orden]
+                    ╠═════════════════════════════╣
+                    ║ 🔴 Hoja: Reciclaje           ║◄──── [Vincular desde Inventario (Estado=No Reparado)]
+                    ╚═════════════════════════════╝
+                                 │
+                                 ▼
+                      ╔═════════════════════════╗
+                      ║ Consola de Navegación   ║
+                      ╠═════════════════════════╣
+                      ║ 📟 Comandos Foxy         ║
+                      ║   - registrar orden      ║ ← [Macro o botón: insertar nueva fila]
+                      ║   - iniciar reparación   ║ ← [Botón que cambia estado]
+                      ║   - reciclar dispositivo ║ ← [Botón: mover a hoja reciclaje]
+                      ║   - generar reporte      ║ ← [Genera PDF o resumen desde Historial]
+                      ╚═════════════════════════╝
+                                 │
+                                 ▼
+                      ╔═════════════════════════╗
+                      ║    Reportes Automáticos ║
+                      ╠═════════════════════════╣
+                      ║  📄 Informe diario       ║ ← [Script vinculado a Historial]
+                      ║  📊 Inventario completo  ║ ← [Script vinculado a Inventario]
+                      ╚═════════════════════════╝

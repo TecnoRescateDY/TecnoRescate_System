@@ -1,0 +1,83 @@
+"contexto de la idea"
+📘 Manual de Operaciones TecnoRescate
+🧩 Archivos base
+CrearCarpetas_TecnoRescate.bat
+
+Script que genera la estructura de carpetas organizadas en E:\TecnoRescate.
+
+Objetivo: tener un entorno físico ordenado que acompañe al sistema de trabajo digital, estilo Panel de Consola.
+
+
+███████████████████████████████████████████████
+█          T E C N O _ R E S C A T E           █
+███████████████████████████████████████████████
+Crea carpetas como: Clientes, Inventario, Bitácora, Documentos, Presupuestos, etc.
+
+TecnoRescate_Maestro.xlsx
+
+Archivo principal de administración y gestión interna.
+
+Contiene múltiples hojas para cada área del negocio.
+
+Incluye hoja de configuración para menús desplegables centralizados.
+
+🗃️Consola de Navegación
+
+Archivo satélite que actúa como "puente de mando" o tablero general.
+
+Accesos directos, resumen de estado, y guía general del sistema.
+
+Inspirado en el panel de control del Enterprise.
+
+🧭 Paso a Paso
+🔹 1. Preparar la estructura física del emprendimiento
+Ejecutar el archivo CrearCarpetas_TecnoRescate.bat.
+
+Esto crea una estructura de carpetas en tu disco (por ejemplo F:\TecnoRescate).
+
+Asegura que los archivos TecnoRescate_Maestro.xlsx y 🧭 Panel de Inicio.xlsx estén ubicados en esa raíz o donde lo necesites dentro de esa estructura.
+
+🔹 2. Archivo Principal: TecnoRescate_Maestro.xlsx
+Hojas confirmadas y su propósito
+Hoja	Propósito principal
+🧭 Panel de Inicio	Acceso general y resumen de todo el sistema
+👥 Clientes	Base de datos de clientes, con filtros y menús
+🛠 Bitácora de Casos	Registro técnico: diagnóstico, solución, seguimiento
+🧰 Inventario	Listado de partes, dispositivos, repuestos y stock
+💸 Ingresos y Egresos	Flujo de caja, ingresos, egresos y cálculo de balance
+📊 Cartera Financiera	Seguimiento de inversiones y metas (interés compuesto)
+📈 Estadísticas	Gráficos y datos automáticos de rendimiento
+📋 Checklists	Tareas recurrentes, control de calidad, pasos de reparación
+💬 Sala de Reuniones	Ideas, mejoras, roadmap del emprendimiento
+⚙️ Configuración	Menús desplegables centralizados (como una base de datos de opciones)
+🔹 3. Hoja de Configuración (clave para automatizar)
+Objetivo:
+Centralizar los valores usados en los menús desplegables de todas las hojas.
+
+¿Qué contiene?
+Categorías como: Tipo de Cliente, Estado del Caso, Canal de Contacto, Medio de Pago, Servicio, Prioridad, etc.
+
+Cada columna tiene sus valores hacia abajo, listos para ser usados con "Intervalos Nombrados" en las demás hojas.
+
+🔹 4. Panel de Inicio.xlsx
+Función:
+Es la pantalla de inicio operativa, que:
+
+Incluye accesos con hipervínculos a carpetas del sistema.
+
+Muestra alertas clave (stock bajo, pendientes de entrega, ingresos del mes).
+
+Puede incluir un saludo personalizado de Foxy, e incluso resumenes diarios.
+
+🔹 5. Conexiones entre archivos
+Desde 🧭 Panel de Inicio.xlsx	Hacia...	Modo
+Hipervínculo a carpeta	Carpeta Clientes, Inventario, etc.	Ctrl+K para agregar
+Hipervínculo a Excel	TecnoRescate_Maestro.xlsx	Acceso directo a pestañas específicas
+Llamadas a documentos .doc	Presupuestos personalizados	Enlace desde hoja de Cliente
+🔹 6. Futuras integraciones
+✅ Automatización de alertas
+✅ Gráficos animados en hoja de estadísticas
+✅ Generador de presupuestos con campos autocompletables
+✅ Plantillas PDF para entregas
+✅ Consola animada de bienvenida con voz de Foxy
+

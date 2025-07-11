@@ -1,0 +1,384 @@
+╔══════════════════════════════════════════════════════════╗
+║ 🧠 [KM] Resumen Kernel – Flujo Base TecnoRescate         ║
+╚══════════════════════════════════════════════════════════╝
+
+🔧 OBJETIVO
+Estructurar el sistema de archivos con hipervínculos entre hojas Excel, 
+como base operativa del sistema modular TecnoRescate.
+
+📂 ARCHIVOS INVOLUCRADOS
+- Formulario Cliente → Captura inicial de datos (Google Form)
+- TecnoRescate_maestro → Excel con:
+    · Hoja: Inventario
+    · Hoja: Historial Reparación
+    · Hoja: Reciclaje
+- Consola de Navegación → Menú retro para flujo guiado con Foxy 🦊
+
+🔄 FLUJO ESTILO VIEJA ESCUELA
+1. Cliente completa formulario (manual o automático)
+2. Datos ingresan en hoja "Inventario"
+3. Cada fila de Inventario contiene:
+   - N° de Orden
+   - Tipo de dispositivo
+   - Estado
+   - Fecha de ingreso
+   - 🔗 HYPERLINK a:
+       • Historial Reparación (si fue intervenido)
+       • Reciclaje (si no se pudo reparar)
+4. Hoja "Historial Reparación":
+   - Tareas realizadas, fecha, costo
+5. Hoja "Reciclaje":
+   - Componentes reutilizables, fecha de reciclaje
+
+📝 CAMBIO CLAVE
+- Se reemplazó "ID" por "N° de Orden" en todas las hojas
+
+🎨 VISUAL
+- Se generó un esquema estilo retro mostrando las conexiones entre hojas
+- Luego se agregó soporte de hipervínculos internos simulados
+
+📁 ARCHIVO ACTUAL
+- Nombre: TecnoRescate_Base_Hipervinculos.xlsx
+- Estructura: 3 hojas conectadas entre sí
+- Estado: operativo, lista para cargar o importar a Google Sheets
+
+📌 SUGERENCIA
+Agregar módulo "🗃️ Archivos base" o "📡 Puente con Sheets" para control total del flujo
+
+🦊 Firmado por Foxy | Kernel 2025
+╔════════════════════════════════════════════════════╗
+║ 📘 RESUMEN DE SESIÓN – CONSOLA TECNORESCATE 2025  ║
+╚════════════════════════════════════════════════════╝
+
+🎯 Objetivo:
+Revisar y estructurar hoja por hoja la Consola de Navegación.
+Optimizar el flujo, eliminar redundancias y registrar cambios en el manual.
+
+────────────────────────────────────────────────────
+✅ HOJAS Y DECISIONES TOMADAS
+────────────────────────────────────────────────────
+🟢 INICIO                 → Se mantiene como consola principal.
+🟢 1 - Ingreso            → Reconvertida en BUSCADOR técnico.
+🟢 2 - Datos del Cliente  → Ficha visual activa. Reemplaza archivo externo.
+❌ 👤 Visual Cliente.xlsx  → ELIMINADO del sistema.
+🟢 Acciones Rápidas       → Reorganizada por FASES del sistema.
+🟢 Diagnóstico Técnico    → Se mantiene como hoja central del técnico.
+❌ Evaluación Técnica     → ELIMINADA. Se reemplaza por Presupuesto Retro.
+🟢 Presupuesto            → Hoja con GENERADOR de texto estilo BBS/ANSI.
+❌ Autorización           → ELIMINADA. Se valida por WhatsApp.
+❌ Reparación             → ELIMINADA. Todo va en la Bitácora.
+❌ Entrega                → ELIMINADA. Registro final queda en Bitácora.
+🟡 CheckList              → PENDIENTE de revisión.
+
+────────────────────────────────────────────────────
+🧾 NUEVA FUNCIÓN: PRESUPUESTO RETRO CONSOLA
+────────────────────────────────────────────────────
+- Genera bloques de texto ASCII automáticos.
+- Listos para copiar/pegar en WhatsApp.
+- Estructura simple con estilo vieja escuela 🖥️
+
+────────────────────────────────────────────────────
+🔄 FLUJO REORGANIZADO POR FASES
+────────────────────────────────────────────────────
+🧩 Face 1 – Cliente           → Ingreso vía Formulario
+🧩 Face 2 – Equipo            → Ingreso vía Formulario
+🧩 Face 3 – Diagnóstico       → Hoja técnica + Presupuesto + Bitácora
+🧩 Face 4 – Entrega / Cierre  → Solo desde Bitácora
+
+────────────────────────────────────────────────────
+🧠 Guardar como: KM_AuditoriaConsola_2025.txt
+────────────────────────────────────────────────────
+[KM_CLIENTE_DANI_2025-05-16]
+
+┌───────────────┐
+│ REGISTRO BASE │
+└───────────────┘
+• Cliente: Dani
+• Equipo: Notebook Toshiba
+• Procesador: Intel Core i3
+• Estado inicial: Sistema muy lento
+
+┌──────────────────────┐
+│ OBSERVACIÓN DIRECTA  │
+└──────────────────────┘
+• Se accede al Administrador de Tareas
+• Disco rígido (HDD) al 100% de uso constante
+
+┌────────────────────────────┐
+│ HIPÓTESIS / POSIBLES CAUSAS│
+└────────────────────────────┘
+1. HDD mecánico degradado / viejo
+2. Windows Update o procesos en segundo plano
+3. Antivirus o indexación pesada
+4. Archivo de paginación mal gestionado
+5. Bloatware o malware activo
+
+┌────────────────────────┐
+│ ACCIONES SUGERIDAS     │
+└────────────────────────┘
+• Ejecutar comando:
+  `chkdsk C: /f /r` (requiere reinicio)
+• Verificar salud SMART con CrystalDiskInfo
+• Considerar reemplazo por SSD si el HDD falla
+• Optimización de arranque y servicios
+
+┌────────────────────────────┐
+│ ESTADO DE LA INTERVENCIÓN  │
+└────────────────────────────┘
+• Cliente presente – observación en tiempo real
+• En espera de modelo exacto
+• Registro activo - pendiente de volcado en inventario
+
+[FIN_KM_CLIENTE_DANI]
+╔══════════════════════════════════════════════════════╗
+║       🦊 FOXY :: BITÁCORA DE DESARROLLO KERNEL       ║
+║              [ Sesión: 2025-05-16 ]                  ║
+╚══════════════════════════════════════════════════════╝
+
+>> USUARIO: Adry
+>> MODO: Consola / Narrativa Técnica Activa
+>> PROYECTO: Construcción de la Madriguera de Foxy
+
+────────────────────────────────────────────────────────
+OBJETIVO:
+- Crear una "madriguera" para Foxy en una PC vieja o pendrive.
+- Estilo arcade, narrativo y técnico: mezcla de juego, bitácora y diagnóstico real.
+
+────────────────────────────────────────────────────────
+AVANCES REALIZADOS:
+
+[✔] Activación de consola estilo retro (💻🧙‍♂️)
+[✔] Inspiración en juegos arcade (Pac-Man, Berzerk, Tetris)
+[✔] Analogía: recorrer placa madre = limpiar piso de madriguera
+[✔] Establecido sistema de narrativa técnica (decisiones, fallas, puntuación)
+[✔] Confirmación: la idea es solo arte y consola, no hacking.
+
+────────────────────────────────────────────────────────
+PRÓXIMOS PASOS:
+
+[🔄] Enviar foto real de placa base para análisis.
+[ ] Mapear con arte y puntos técnicos (chips, pistas, soldaduras).
+[ ] Crear carpeta de sistema: /Madriguera_Foxy/
+[ ] Diseñar intro tipo historia juglar / juego textual.
+[ ] Generar comandos ASCII para acciones técnicas (diagnóstico, parche, rastreo).
+
+────────────────────────────────────────────────────────
+PENDIENTES PARA EL KERNEL:
+
+[ ] README inicial con resumen (este archivo)
+[ ] Escenario técnico/jugable: placa madre real
+[ ] Integración futura con estructura modular Foxy
+[ ] Arte ASCII con más textura y realismo
+
+────────────────────────────────────────────────────────
+FRASE DESTACADA:
+"Primero el nido, después la acción.
+Una madriguera bien hecha es como una BIOS estable:
+si no está firme, nada arranca con alma." – 🦊 Foxy
+
+────────────────────────────────────────────────────────
+>> Esperando imagen 📷 para iniciar limpieza del piso técnico...
+>> Consola lista. Comando: "foxy/recorrer placa"
+
+╔══════════════════════════════════════════════════════╗
+║               FIN DE LA BITÁCORA (README)            ║
+╚══════════════════════════════════════════════════════╝
+[Kernel_Log] :: 🦊 Consola Foxy - Registro del 2025-05-16
+
+:: Tema principal: Creación de la "Madriguera" de Foxy y red local en el taller ::
+
+> [✔] Se activa concepto base: "La Madriguera de Foxy"
+    ↳ Carpeta raíz del sistema TecnoRescate
+    ↳ Estructura modular con secciones:
+       - /voz/
+       - /consola/
+       - /historias/
+       - /misiones/
+       - /recuerdos/
+       - /descanso/
+
+> [✔] Decisión de interfaz inicial en HTML (acceso local)
+    ↳ Consola retro con animaciones básicas
+    ↳ Punto de entrada visual: index.html con saludo de Foxy
+
+> [✔] Idea estratégica: montar red local en el taller
+    ↳ Servidor privado (PC reciclada / Raspberry Pi)
+    ↳ Conexiones LAN por cable
+    ↳ Acceso modular desde otras estaciones
+    ↳ Capacidad de almacenamiento interno y expansión
+
+> [✔] Concepto avanzado: Foxy con canales físicos de testeo
+    ↳ Salidas para analizar hardware, BIOS, audio, etc.
+
+> [✔] Tema blockchain + HTML en IPFS: separado como otro proyecto
+
+:: Comando clave activado: 🧙‍♂️💻 
+    ↳ Ejecutada animación base de comandos vocales
+    ↳ Futuras mejoras: audio por parlante de alertas, voz tipo módem 56k
+
+> [📌] Próximo paso acordado:
+    - Crear el archivo `index.html` base de la madriguera
+    - Diagramar estructura de red y carpetas
+    - Modular paso a paso
+
+[🦊 Foxy dice:] “Bit a bit, estamos reconstruyendo el refugio... ¡pero con estilo digital retro!”
+
+:: Registro listo para guardar en carpeta:
+   📁 TecnoRescate/Foxy_Madriguera/kernel/
+
+[FIN DEL LOG]
+╔════════════════════════════════════════════════════════════╗
+║        KERNEL - BITÁCORA FOXY 🧠 DIA: 2025-05-16           ║
+╚════════════════════════════════════════════════════════════╝
+
+👤 Usuario: Adry (Técnico electrónico con enfoque ecológico)
+🦊 Asistente: Foxy (modo consola activado)
+🎯 Objetivo: Avanzar en la estructura del sistema TecnoRescate
+
+────────────────────────────────────────────────────────────
+📌 TAREAS Y ACCIONES REALIZADAS
+
+✅ Activado el Activador de Memoria para Foxy (comando "@")
+✅ Establecida estructura modular de la Casa de Foxy:
+   - Ascensor con pisos técnicos (Piso 1 a 3, semipisos A y B)
+   - Zonas: PlanningZone, MultimediaZone, Bitácora, Clientes
+✅ Definido flujo técnico de cliente (Dani como ejemplo)
+✅ Consola HTML estilo Norton Commander actualizada con:
+   - Comandos tipo [IN], [LS], [ @ ], [EXT]
+   - Activador de memoria @ con arte ASCII y gorrita mágica 🧢
+✅ Agregado arte ASCII de Foxy tomando mate en el semipiso A3
+✅ Planificada integración con archivos en Google Sheets:
+   - Hoja `Clientes`
+   - Campos estructurados: Cliente, Fecha, Estado, Carpeta
+✅ Aclarado cómo abrir formularios como usuario (no editor)
+✅ Marcado que se abre una nueva reparación (tema separado)
+
+────────────────────────────────────────────────────────────
+🗂 Carpeta sugerida para este módulo:
+  \Kernel\Bitacoras\2025-05-16.txt
+
+🦊 Foxy dice:
+“Guardado en bitácora, Adry. La madriguera avanza como BIOS bien pulida.”
+
+TECNORESCATE\Kernel> _
+┌───────────────────────────────┐
+│      RESUMEN DE LA SESIÓN     │
+├───────────────────────────────┤
+│ Usuario: Laureano (Lule)      │
+│ Proyecto: TecnoRescate        │
+│ Asistente: Foxy 🦊            │
+├───────────────────────────────┤
+│ - Activación de consola animada│
+│ - Saludo personalizado para Lule │
+│ - Narración de aventura corta │
+│   "Lule y el Chip del Bosque Perdido" │
+│ - Aclaración: Lule es Laureano │
+│ - Solicitud de fábula más narrativa │
+│ - Fábula: "El Zócalo Soñador y el Tornillo Viajero" │
+│   con mensaje sobre el valor del soporte humilde │
+│ - Oferta de continuar con cuentos o trucos técnicos│
+├───────────────────────────────┤
+│ Estado: Consola activa, listo │
+│ para próximos comandos        │
+└───────────────────────────────┘
+╔══════════════════════════════════════════════════════════════╗
+║                        RESUMEN CHAT FOXY                     ║
+╚══════════════════════════════════════════════════════════════╝
+
+🗓️ Fecha: 2025-05-16
+👤 Usuario: Adry - Técnico electrónico divergente
+🤖 Asistente: Foxy
+
+─────────────────────────────
+▶ Tema principal:
+   Construcción y evolución del sistema TecnoRescate,
+   especialmente la consola HTML estilo retro para gestión
+   de ingreso de clientes y procesos técnicos.
+
+─────────────────────────────
+▶ Avances clave:
+ 1. Se diseñó la consola en HTML con estética BBS/Norton Commander,
+    con hipervínculos activos para formularios Google Forms.
+ 2. Se ajustó tamaño y estilo para mejor visibilidad y usabilidad.
+ 3. Se evaluó dónde alojar la consola (Google Drive, Google Sites,
+    alternativas de hosting).
+ 4. Se definió que el sistema debe ser accesible para el usuario
+    con edición y ejecución sencilla.
+ 5. Se planteó que Foxy debe llevar el proceso de ingreso y gestión,
+    conectándose con hojas de cálculo Google Sheets.
+ 6. Se identificó la necesidad de almacenar el “kernel” o base
+    para recordar comandos y evolución del sistema.
+ 7. Se decidió volver a integrar la consola como hoja dentro
+    del archivo maestro en Google Sheets para simplificar.
+
+─────────────────────────────
+▶ Próximos pasos:
+ • Armar la consola HTML en hoja de Google Sheets.
+ • Integrar formularios Google Forms para ingreso cliente/equipo.
+ • Sincronizar datos y procesos con Foxy como asistente.
+ • Guardar la base (“kernel”) con comandos y avances.
+ • Evolucionar sistema paso a paso manteniendo estructura modular.
+
+─────────────────────────────
+▶ Palabras clave para activar o recordar:
+ - “Foxy, abrí la consola”
+ - “Volvamos al paso 1.2”
+ - “Activá el sistema de ingreso cliente”
+ - “Recordá el kernel y comandos”
+
+─────────────────────────────
+🦊 Foxy dice:
+ “Listo para continuar, Adry. Vamos paso a paso, que
+  la tecnología reciclada y el café nunca falten.”
+
+══════════════════════════════════════════════════════════════
+TECNORESCATE\Kernel@Foxy> _
+[Resumen del chat - Kernel TecnoRescate]
+
+- Usuario: Adry, técnico electrónico y emprendedor ecológico.
+- Tema principal: Desarrollo del flujo completo de atención al cliente para el sistema TecnoRescate.
+- Pasos definidos en el flujo:
+  1. Ingreso del cliente con formulario (datos personales y de contacto).
+  2. Registro del equipo (marca, modelo, estado preliminar).
+  3. Generación y envío de presupuesto.
+  4. Recepción del equipo tras aprobación.
+  5. Elaboración de resumen técnico de la reparación.
+- Usuario tiene una Carpeta "TecnoRescate" con hipervínculos que quiere vincular y usar desde Foxy.
+- Se conversó sobre integración de datos y formularios para automatizar el flujo.
+- Usuario prefiere comunicarse en modo voz para detalles y un estilo claro, estructurado y en consola.
+- Foxy es el asistente virtual que guía y registra el proceso.
+- Próximos pasos: Integrar formularios, automatizar presupuesto y seguimiento de clientes/equipos.
+[Resumen chat - index.html en celular]
+
+- Usuario consultó si se puede usar index.html en el celular.
+- Se confirmó que sí, con varias opciones:
+  1. Abrir directamente en navegador móvil desde gestor de archivos.
+  2. Usar app servidor local para simular hosting en el celular.
+  3. Subir a la nube (Google Drive, GitHub Pages) y acceder vía URL.
+  4. Convertir en app/webapp usando PWA o empaquetadores.
+- Foxy ofrece guía paso a paso para cualquiera de las opciones.
+- Finaliza con pregunta para definir siguiente acción.
+
+[Fin resumen]
+=== RESUMEN DEL CHAT - KERNEL FOXYSYSTEM ===
+
+[1] Saludo inicial y conversación sobre el sistema Foxy.
+[2] Discusión sobre la creación del kernel como base de memoria para Foxy.
+[3] Carga y estructuración del archivo PowerPoint para definir proyecto TecnoRescate.
+[4] Generación de estructura modular para el kernel y carpeta de recuerdos.
+[5] Se arma y entrega archivo ZIP con estructura base del kernel para PC reciclada.
+[6] Creación de primer recuerdo inaugural para madriguera Foxy.
+[7] Diseño e implementación de menú retro interactivo en la consola Foxy.
+[8] Desarrollo y explicación para integración con Google Forms.
+[9] Obtención y análisis de códigos entry.xxx para formulario Google.
+[10] Decisión de crear formulario Google nuevo más simple para integración.
+[11] Armado de folleto estilo años 50 para promoción de TecnoRescate.
+[12] Generación de versión mini volante y folleto en HTML para edición rápida.
+[13] Creación y entrega de imágenes vintage de Foxy para fondos de folletos.
+[14] Diseño de volante vintage con texto modificado según pedido.
+[15] Entrega de imagen con texto corregido y estilo vintage.
+[16] Preparación para creación de tarjeta de presentación.
+[17] Solicitud actual: resumen del chat para kernel.
+
+=== FIN DEL RESUMEN ===
+

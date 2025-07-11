@@ -1,0 +1,38 @@
+Análisis FODA
+
+El análisis FODA permite identificar los factores internos y externos que afectan el desarrollo del proyecto. En este caso, también se incluye un análisis comparativo clave con soluciones comerciales como Alexa, lo cual refuerza el enfoque diferencial y ecológico del sistema DIY.
+
++----------------------+----------------------------------------------------------------------------------------+
+| Ítem                 | Descripción                                                                            |
++----------------------+----------------------------------------------------------------------------------------+
+| Fortalezas (F)       | - Reciclaje como eje diferencial                                                        |
+|                      | - Independencia de plataformas comerciales (DIY local)                                 |
+|                      | - Adaptabilidad del sistema a rutinas personales y terapéuticas                        |
+|                      | - Bajo costo y aprovechamiento de chatarra digital                                     |
+|                      | - Asistente físico y virtual con botón y consola personalizada                         |
++----------------------+----------------------------------------------------------------------------------------+
+| Oportunidades (O)    | - Tendencia creciente al minimalismo y bajo consumo tecnológico                        |
+|                      | - Conciencia ecológica en alza                                                         |
+|                      | - Posibilidad de sumar voluntarios o makers                                           |
+|                      | - Espacios comunitarios de reparación y enseñanza                                     |
++----------------------+----------------------------------------------------------------------------------------+
+| Debilidades (D)      | - Escalabilidad inicial limitada                                                        |
+|                      | - Mayor complejidad en instalación o montaje (versus plug-and-play comercial)          |
+|                      | - Necesidad de documentación clara y modular                                           |
++----------------------+----------------------------------------------------------------------------------------+
+| Amenazas (A)         | - Competencia directa con dispositivos como Alexa o Google Home                        |
+|                      | - Avances rápidos en asistentes con IA propietaria                                     |
+|                      | - Posible falta de comprensión del valor ecológico frente a marcas conocidas           |
++----------------------+----------------------------------------------------------------------------------------+
+
+🆚 **Comparativo: Alexa vs. Asistente Virtual DIY**
+
+| Característica           | Alexa                                | Asistente Virtual DIY                        |
+|--------------------------|---------------------------------------|---------------------------------------------|
+| Propietario              | Amazon                                | Usuario (independiente, local)              |
+| Hardware reutilizable    | ❌ No                                  | ✅ Sí (reciclaje electrónico)               |
+| Personalización          | Limitada                              | Alta (consola, botones, rutinas personalizadas) |
+| Dependencia de internet  | Alta                                  | Baja o nula (según configuración)           |
+| Vinculación emocional    | Neutra                                | Empática, terapéutica, con personaje (Foxy) |
+
+Este análisis resalta que la ventaja del sistema DIY no está en competir directamente con grandes marcas, sino en **ocupar un nicho diferente, más humano, ecológico y reparador**. 🌿🛠️

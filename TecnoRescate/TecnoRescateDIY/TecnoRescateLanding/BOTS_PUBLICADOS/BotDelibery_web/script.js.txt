@@ -1,0 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const menuList = document.getElementById("menu-list");
+  const whatsappBtn = document.getElementById("whatsapp-link");
+
+  menuList.addEventListener("click", (e) => {
+    if (e.target.tagName === "LI") {
+      const item = e.target.dataset.pedido;
+      const numero = "5492213559286";
+      const mensaje = encodeURIComponent(`Hola, quiero pedir: ${item}`);
+      whatsappBtn.href = `https://wa.me/${numero}?text=${mensaje}`;
+      whatsappBtn.textContent = "👉 Confirmar pedido por WhatsApp";
+    }
+  });
+});

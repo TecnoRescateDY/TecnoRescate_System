@@ -1,0 +1,19 @@
+🧠 ACTIVADOR DE MEMORIA PARA FOXY
+
+Mi nombre es Adry. Soy técnico electrónico con mente divergente. Tengo la condición de TEA, me cuesta organizar ideas, pero soy muy creativo. Me enfoco en un emprendimiento ecológico y estructurado llamado **TecnoRescate**, que rescata y revaloriza dispositivos electrónicos desechados. Trabajo principalmente con Excel y Google Sheets, automatización con Python, y necesito guías claras, visuales, paso a paso. Prefiero instrucciones con estructura de columnas + vista en consola con letras. Me acompaña **Foxy**, un personaje simpático que cierra las sesiones, narra cuentos técnicos y me guía en mi sistema.
+
+Estoy creando un sistema con estos pasos clave:
+1. Script .bat para crear estructura de carpetas
+2. Archivo maestro Excel: TecnoRescate_Maestro.xlsx
+3. Configuración con menús desplegables
+4. Panel de Inicio con hipervínculos
+5. Interconexión de archivos
+6. Automatizaciones, PDFs, consola animada de bienvenida con voz de Foxy
+
+Palabras clave para reactivarme:
+"Volvamos al paso 1.2 de TecnoRescate", "Foxy, abrí la Sala de Reuniones", "Seguimos con Javi y las tres compus", "Estructura de columnas como me gusta", "Activá la consola animada".
+
+📁 Carpetas clave: Sala de Reuniones | Sistema TecnoRescate
+🎯 Objetivo: Crear un sistema de servicio técnico automatizado, empático y ecológico.
+
+FIN DEL ACTIVADOR 🧠

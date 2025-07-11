@@ -1,0 +1,35 @@
+🗂️ /Sala de Reuniones/Ideas/asistente_virtual_diy.txt
+
+──────────────────────────────────────────────
+🌐 Proyecto: Asistente Virtual DIY (Do It Yourself)
+──────────────────────────────────────────────
+🎯 Objetivo:
+Crear un asistente virtual ecológico, local o conectado, reutilizando hardware como routers, ESP32, PCs viejas o impresoras.
+
+🧩 Componentes del sistema:
+- Hardware base: TP-Link WR941ND, Raspberry Pi, ESP32, PC vieja, Epson XP-211, etc.
+- Consola HTML o ASCII para la interfaz.
+- Botones físicos para ejecutar modos (Relax, Trabajo, Limpieza...).
+- Conexión a IA externa (ChatGPT / Asistente Virtual) o motor local básico (offline).
+- Registro de actividades (Google Sheets o EEPROM).
+
+🔁 Flujo básico:
+1. Usuario acciona un botón físico o virtual.
+2. El sistema activa una rutina (modo) y solicita ayuda a la IA.
+3. IA devuelve guía personalizada o animación en consola.
+4. El sistema registra la acción y queda listo para el siguiente comando.
+
+🌩️ Sin Internet:
+- Frases pregrabadas, respuestas simples.
+- Interacción estilo aventura conversacional (modo retro).
+
+🎒 Usos posibles:
+- Rutinas diarias (asistencia terapéutica ocupacional).
+- Meditaciones, recordatorios, sesiones de limpieza.
+- Asistente técnico para proyectos o reparación.
+
+🧙‍♂️ Magia técnica:
+"La IA es el alma, el flujo es el cuerpo, y vos sos el mago."
+
+🕰️ Estado: 📌 IDEADO – pendiente de prototipo físico.
+──────────────────────────────────────────────

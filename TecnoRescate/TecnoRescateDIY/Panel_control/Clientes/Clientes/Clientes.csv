@@ -1,0 +1,3 @@
+ID,Nombre del Cliente,Teléfono,Correo Electrónico,Dirección,Dispositivo,Fecha de Ingreso,Estado del Servicio,Observaciones
+001,Juan Pérez,1123456789,juan.perez@email.com,Calle Falsa 123,TV LED Samsung,2025-04-07,En Reparación,"Cliente solicitó revisión urgente"
+002,Ana Torres,1198765432,ana.torres@email.com,Calle Real 456,Notebook HP,2025-04-06,Finalizado,"Entregado el mismo día, limpieza interna"

@@ -1,0 +1,13 @@
+[DOC] REGISTRO DE DOCUMENTACION 
+Fecha: AAAA-MM-DD 
+Tipo: Entrada / Observación / Resultado 
+ 
+--- 
+ 
+📌 DESCRIPCIÓN: 
+ 
+🔍 DETALLE: 
+ 
+✅ RESULTADO / USO PREVISTO: 
+ 
+📎 NOTAS: 

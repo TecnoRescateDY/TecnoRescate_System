@@ -1,0 +1,20 @@
+@echo off
+set "base=E:\TecnoRescate\PlandeNegocioTecnoRescate"
+
+mkdir "%base%\1. Resumen Ejecutivo"
+mkdir "%base%\2. Proposito y Vision"
+mkdir "%base%\3. Analisis FODA"
+mkdir "%base%\4. Problema que Resuelve"
+mkdir "%base%\5. Propuesta de Valor"
+mkdir "%base%\6. Clientes Objetivo"
+mkdir "%base%\7. Modelo de Negocio"
+mkdir "%base%\8. Reciclaje como Eje Central"
+mkdir "%base%\9. Desarrollo del Producto"
+mkdir "%base%\10. Plan Tecnico"
+mkdir "%base%\11. Marketing y Comunicacion"
+mkdir "%base%\12. Sustentabilidad y Escalabilidad"
+mkdir "%base%\13. Anexos"
+
+echo Carpetas creadas correctamente en: %base%
+pause
+

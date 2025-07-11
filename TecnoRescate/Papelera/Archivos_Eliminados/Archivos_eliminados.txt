@@ -1,0 +1,16 @@
+================================================== 
+Fecha: mar 06/05/2025  3:27:26,43 
+ 
+Archivos movidos: 
+TecnoRescate\Papelera\Archivos_Eliminados\arbol_carpetas.txt 
+TecnoRescate\Papelera\Archivos_Eliminados\Archivos_eliminados.txt 
+TecnoRescate\Papelera\Archivos_Eliminados\Autorizacion_TecnoRescate.xlsx 
+TecnoRescate\Papelera\Archivos_Eliminados\crear_arbol.bat 
+TecnoRescate\Papelera\Archivos_Eliminados\crear_estructura_KM.bat 
+TecnoRescate\Papelera\Archivos_Eliminados\index.html 
+TecnoRescate\Papelera\Archivos_Eliminados\Listado de Carpetas del Chat.txt 
+TecnoRescate\Papelera\Archivos_Eliminados\Nuevo Documento de texto.txt 
+TecnoRescate\Papelera\Archivos_Eliminados\TecnoRescate_Maestro.xlsx 
+TecnoRescate\Papelera\Archivos_Eliminados\ZipTecnoRescate.zip 
+TecnoRescate\Papelera\Archivos_Eliminados\?? Panel de Inicio.xlsx 
+TecnoRescate\Papelera\Archivos_Eliminados\??_Panel_de_Inicio_TecnoRescate.xlsx 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoRescate | Solución para Barberías</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-color: #1a1a1a;
+            padding: 60px 20px;
+            border-bottom: 2px solid #D4AF37;
+        }
+        .hero h1 {
+            font-size: 2.8em;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .hero h1 span {
+            color: #D4AF37;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #b0b0b0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #D4AF37;
+            color: #121212;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #ffdf70;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .section h2 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .problem-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 500px;
+            margin: auto;
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .problem-list li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .problem-list li::before {
+            content: '❌';
+            margin-right: 10px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+        .feature-card {
+            background-color: #1a1a1a;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #D4AF37;
+        }
+        .feature-card h3 {
+            font-size: 1.4em;
+            color: #D4AF37;
+            margin-top: 0;
+        }
+        .testimonial {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #D4AF37;
+            font-style: italic;
+        }
+        .testimonial p {
+            margin: 0;
+        }
+        .testimonial .author {
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #D4AF37;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Dejá de atender el teléfono y <span>empezá a llenar tu agenda</span></h1>
+            <p>El sistema inteligente para barberías que te consigue clientes, reduce las ausencias y te devuelve lo más importante: tu tiempo.</p>
+            <a href="#demo" class="cta-button">Quiero una DEMO GRATIS</a>
+        </div>
+    </div>
+
+    <div class="section" id="problema">
+        <div class="container">
+            <h2>¿Te suena familiar?</h2>
+            <ul class="problem-list">
+                <li>El teléfono suena justo cuando estás en medio de un corte.</li>
+                <li>Clientes que "se olvidan" del turno y te dejan un hueco vacío.</li>
+                <li>Pasás horas respondiendo mensajes de WhatsApp para coordinar un solo turno.</li>
+                <li>No tenés idea de quiénes son tus clientes más fieles.</li>
+                <li>Te gustaría tener más clientes pero no sabés cómo buscarlos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" style="background-color: #1a1a1a;">
+        <div class="container">
+            <h2>Presentamos el Plan "Socio Digital" de TecnoRescate</h2>
+            <p style="max-width: 600px; margin: auto; margin-bottom: 40px;">Nosotros nos encargamos de toda la tecnología para que vos te dediques a lo que mejor sabés hacer: crear estilos increíbles. Tu barbería, funcionando en piloto automático.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>✅ Turnos 24/7 por WhatsApp</h3>
+                    <p>Tu agenda se llena sola, incluso mientras dormís. Tu bot personal agenda, cancela y reagenda por vos, sin errores.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Recordatorios Anti-Ausencias</h3>
+                    <p>Reducí los "no-shows" en más de un 50%. Enviamos recordatorios automáticos a tus clientes para que nadie se olvide de su turno.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Ficha de Cliente Inteligente</h3>
+                    <p>Fidelizá como un profesional. El sistema recuerda las preferencias de cada cliente para que puedas ofrecer un servicio 100% personalizado.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Marketing para Clientes</h3>
+                    <p>¿Clientes desaparecidos? Enviamos promociones automáticas para recuperar a esos clientes que hace tiempo no te visitan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="container">
+            <h2>Lo que dicen nuestros socios</h2>
+            <div class="testimonial">
+                <p>"Pensaba que esto era para empresas grandes. Ahora no sé cómo pude trabajar sin esto. Tengo la agenda llena con dos semanas de anticipación y recuperé mis fines de semana. TecnoRescate se paga solo."</p>
+                <p class="author">- Leo, de "La Barbería de Leo" (Cliente Satisfecho)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="demo" style="background-color: #D4AF37; color: #121212;">
+        <div class="container">
+            <h2 style="color: #121212;">¿Listo para llevar tu barbería al siguiente nivel?</h2>
+            <p>Hablemos 15 minutos sin compromiso. Te mostramos en vivo cómo funciona y calculamos cuánto dinero extra podrías estar ganando cada mes.</p>
+            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="cta-button" style="background-color: #121212; color: #e0e0e0;">Pedir mi DEMO por WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2025 TecnoRescate. Todos los derechos reservados.</p>
+            <p>Una solución pensada para dueños de negocios como vos.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+📘 LEEME.txt
+
+Este archivo .bat creará una carpeta en tu escritorio llamada "Kernel_8_Foxy_Mente_Clara"
+y copiará en ella los archivos clave del sistema:
+
+- KERNEL_8.0.txt
+- BITACORA_2025-06-17.txt
+- README_TECNORESCATE_KERNEL_8.0.md
+
+No modifica nada más en tu sistema. Es seguro y simple.
+
+¡Buena sesión, Adry! — Foxy

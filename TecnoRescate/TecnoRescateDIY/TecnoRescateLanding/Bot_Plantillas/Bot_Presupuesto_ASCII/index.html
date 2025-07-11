@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Presupuesto Técnico - TecnoRescate</title>
+  <style>
+    body { font-family: monospace; background: #111; color: #0f0; padding: 1em; }
+    textarea { width: 100%; height: 400px; margin-top: 1em; background: #000; color: #0f0; font-family: monospace; }
+    input, select, button, textarea { margin: 0.3em 0; padding: 0.5em; width: 100%; }
+    label { margin-top: 1em; display: block; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>🦊 Presupuesto Técnico TecnoRescate</h2>
+
+  <label>Cliente</label><input id="cliente">
+  <label>Fecha</label><input id="fecha" placeholder="dd/mm/aaaa">
+  <label>Contacto</label><input id="contacto">
+  <label>Equipo</label><input id="equipo">
+  <label>Estado</label><input id="estado">
+  <label>Diagnóstico</label><textarea id="diagnostico"></textarea>
+
+  <label>Servicio 1</label><input id="serv1">
+  <label>Monto</label><input id="monto1">
+
+  <label>Servicio 2</label><input id="serv2">
+  <label>Monto</label><input id="monto2">
+
+  <label>Repuesto / Material</label><input id="repuesto">
+  <label>Monto</label><input id="monto3">
+
+  <label>Total Estimado</label><input id="total">
+
+  <label>Tiempo estimado de entrega</label><input id="entrega">
+  <label>Garantía</label><input id="garantia">
+  <label>Forma de pago</label><input id="pago">
+
+  <button onclick="generarPresupuesto()">🔧 Generar Presupuesto</button>
+  <textarea id="resultado" readonly></textarea>
+
+  <script>
+    function generarPresupuesto() {
+      const r = (id) => document.getElementById(id).value;
+
+      const texto = `
+┌────────────────────────────┐
+          PRESUPUESTO TÉCNICO                     
+└────────────────────────────┘
+
+ Cliente        : ${r("cliente")}
+ Fecha          : ${r("fecha")}
+ Contacto       : ${r("contacto")}
+
+ Equipo         : ${r("equipo")}
+ Estado         : ${r("estado")}
+
+──────────────────────────────────────────────────────────────
+ Diagnóstico    
+──────────────────────────────────────────────────────────────
+ ${r("diagnostico")}
+
+──────────────────────────────────────────────────────────────
+ Trabajos a Realizar
+──────────────────────────────────────────────────────────────
+ ▌ ${r("serv1")} ............ $${r("monto1")}
+ ▌ ${r("serv2")} ............ $${r("monto2")}
+ ▌ ${r("repuesto")} ..... $${r("monto3")}
+
+──────────────────────────────────────────────────────────────
+ TOTAL ESTIMADO: $${r("total")}
+──────────────────────────────────────────────────────────────
+
+ Tiempo estimado de entrega: ${r("entrega")}
+ Garantía: ${r("garantia")}
+ Forma de pago: ${r("pago")}
+
+──────────────────────────────────────────────────────────────
+ Nota: Este presupuesto es estimativo y sujeto a revisión si 
+ se detectan nuevas fallas. Se informará al cliente en tal caso.
+──────────────────────────────────────────────────────────────
+
+ Técnico Responsable: ${r("contacto")} - TecnoRescate
+
+                  ░▒▓█ F I N █▓▒░`;
+
+      document.getElementById("resultado").value = texto;
+    }
+  </script>
+</body>
+</html>

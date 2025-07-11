@@ -1,0 +1,45 @@
+🧠🎮 Estaciones de Activación Cognitiva — Desarrollo Técnico y Terapéutico
+
+🪄 ¿Qué son?
+Estaciones informáticas con hardware reciclado y software libre, diseñadas para estimulación cognitiva, rehabilitación y acompañamiento virtual. 
+Pensadas para personas neurodivergentes, con TEA, adultos mayores, y más.
+
+🧩 Componentes del sistema
+
+Hardware:
+- Equipos livianos revalorizados.
+- Periféricos accesibles (trackball, teclados adaptados, auriculares).
+- Posible uso de pantallas táctiles.
+
+Software:
+- Sistema operativo Linux con entorno amigable.
+- Juegos y programas terapéuticos libres: GCompris, Tux Typing, GNOME Nanny, entre otros.
+- Navegador con accesos terapéuticos.
+- Interacción con asistente Ani 🐰 (HTML o interfaz simple).
+
+🔍 Análisis FODA
+
+Fortalezas:
+- Bajo costo, personalizable, accesible.
+- Compatible con espacios educativos y terapéuticos.
+
+Oportunidades:
+- Difusión de tecnología libre e inclusiva.
+- Aplicación en hogares, escuelas, centros de día.
+
+Debilidades:
+- Requiere mantenimiento periódico.
+- Demanda tiempo de instalación/configuración.
+
+Amenazas:
+- Resistencia a adoptar software libre.
+- Escasa promoción institucional de tecnologías inclusivas.
+
+🧰 Aplicación en TecnoRescate:
+- Se propone crear una habitación en la guarida de Foxy: 'Estación Cognitiva'.
+- Formularios y checklists para montaje.
+- Sistema modular por tipo de usuario o estimulación.
+- Presencia virtual de Ani 🐰 como guía amigable.
+
+🕰️ Recordatorio:
+Revisar esto con tu señora a las 22:40. ¡Magia y café recomendados! 🧙‍♂️☕

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador Bot Catálogo</title>
+  <style>
+    body { font-family: monospace; background: #000; color: #0f0; padding: 20px; }
+    input, textarea, button { background: #111; color: #0f0; border: 1px solid #0f0; padding: 8px; width: 100%; margin-bottom: 10px; }
+    #preview { background: #111; border: 1px dashed #0f0; padding: 20px; margin-top: 20px; white-space: pre-wrap; }
+    label { font-weight: bold; margin-top: 10px; display: block; }
+  </style>
+</head>
+<body>
+  <h1>🦊 Generador Catálogo Exprés</h1>
+
+  <label>Nombre del emprendimiento:</label>
+  <input type="text" id="nombre" />
+
+  <label>Número de WhatsApp:</label>
+  <input type="text" id="whatsapp" />
+
+  <label>Productos (separados por coma):</label>
+  <textarea id="productos" rows="4"></textarea>
+
+  <button onclick="generarBot()">⚙️ Generar Vista Previa</button>
+
+  <h2>📜 Código generado:</h2>
+  <div id="preview"></div>
+
+  <script>
+    const plantilla = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{NOMBRE}}</title>
+  <style>
+    body { font-family: monospace; background: #111; color: #0f0; padding: 20px; }
+    h1 { color: #ff0; }
+    .boton { background: #222; border: 1px solid #0f0; padding: 10px; margin: 5px; cursor: pointer; }
+    .boton:hover { background: #0f0; color: #000; }
+  </style>
+</head>
+<body>
+  <h1>{{NOMBRE}}</h1>
+  <h2>📦 Productos</h2>
+  <div id="catalogo">
+    {{PRODUCTOS}}
+  </div>
+  <h2>📞 Contacto</h2>
+  <a href="https://wa.me/{{WHATSAPP}}" class="boton">📲 WhatsApp</a>
+</body>
+</html>`;
+
+    function generarBot() {
+      const nombre = document.getElementById('nombre').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+      const productosRaw = document.getElementById('productos').value;
+      const productosArray = productosRaw.split(',').map(p => p.trim());
+      const productosHTML = productosArray.map(p => `<div class="boton">${p}</div>`).join('\n    ');
+
+      let resultado = plantilla
+        .replaceAll('{{NOMBRE}}', nombre)
+        .replace('{{WHATSAPP}}', whatsapp)
+        .replace('{{PRODUCTOS}}', productosHTML);
+
+      document.getElementById('preview').textContent = resultado;
+    }
+  </script>
+</body>
+</html>

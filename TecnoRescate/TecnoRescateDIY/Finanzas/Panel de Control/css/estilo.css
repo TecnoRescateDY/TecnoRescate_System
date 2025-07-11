@@ -1,0 +1,23 @@
+
+body {
+  background-color: #000;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  padding: 20px;
+}
+.consola {
+  border: 2px solid #0f0;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #111;
+  line-height: 1.6;
+}
+h1 {
+  color: #0ff;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,39 @@
+Desarrollo del Producto
+
+El desarrollo del Asistente Virtual DIY tiene una estructura modular y abierta, adaptable a los recursos disponibles y necesidades del usuario.
+
+🔧 Fases de desarrollo:
+
+1. 🧪 Prototipo básico
+   - Hardware mínimo: una placa reciclada (ej: router, ESP32 o PC vieja)
+   - Consola HTML o ASCII offline, activada por botón físico
+   - Rutinas simples preprogramadas
+   - Registro local o en Google Sheets
+
+2. 🧠 Asistente personalizado
+   - Consola con interfaz empática: Foxy o Ani
+   - Activación por botones: Relax, Trabajo, Limpieza, etc.
+   - Conexión a motor IA (local o externo)
+   - Integración con sensores y dispositivos reciclados
+
+3. 🧰 Versión para terceros
+   - Documentación en PDF o web
+   - Manual de armado y adaptación
+   - Kit físico con componentes reciclados + software base
+   - Posibilidad de personalización para instituciones, talleres o familias
+
+📐 Filosofía de diseño:
+- Modularidad: cada parte se puede modificar o sustituir
+- Inclusividad: pensado para personas con TEA, ancianos, zonas sin conexión
+- Bajo costo: mínimo uso de componentes nuevos
+- Estética retro y funcional, con elementos de consola visual y arte ASCII
+
+💡 Evolución futura:
+- Integración con IA local (Ej: Llama, Whisper)
+- Soporte multilenguaje
+- Almacenamiento en EEPROM para rutinas offline
+- App Android offline para configuraciones básicas
+
+Este desarrollo no solo apunta a un asistente virtual…  
+apunta a crear una **herramienta de autonomía, conciencia ecológica y empoderamiento comunitario**.
+

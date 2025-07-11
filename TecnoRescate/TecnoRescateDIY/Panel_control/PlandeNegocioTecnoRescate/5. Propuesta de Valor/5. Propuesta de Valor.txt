@@ -1,0 +1,27 @@
+Propuesta de Valor
+
+Tecno-Rescate DIY ofrece una combinación única de tecnología, reciclaje y acompañamiento humano. No es solo un asistente virtual: es un sistema empático, hecho a mano, pensado para ayudar y cuidar, con base ecológica.
+
++------------------------------+--------------------------------------------------------------------------+
+| Valor Propuesto              | Detalle                                                                  |
++------------------------------+--------------------------------------------------------------------------+
+| ♻️ Reciclaje activo          | Revalorización de hardware descartado, dando nueva vida a componentes    |
+|                              | y reduciendo residuos electrónicos.                                     |
++------------------------------+--------------------------------------------------------------------------+
+| 🛠️ Asistente Modular DIY     | Sistema personalizable, sin necesidad de depender de marcas comerciales. |
+|                              | Puede adaptarse a botones físicos, rutinas diarias o funciones terapéuticas. |
++------------------------------+--------------------------------------------------------------------------+
+| 🧠 Acompañamiento Terapéutico| Incluye elementos pensados para personas con TEA, ansiedad, etc.,       |
+|                              | promoviendo orden, rutinas y estabilidad emocional.                     |
++------------------------------+--------------------------------------------------------------------------+
+| 🌐 Autonomía tecnológica     | Funciona con o sin internet. Puede integrarse con IA online o motores    |
+|                              | locales. Ideal para zonas rurales o entornos offline.                   |
++------------------------------+--------------------------------------------------------------------------+
+| 💡 Enfoque Maker & Educativo| Invita a otros a replicarlo, modificarlo y aprender. Sirve como base     |
+|                              | para talleres, formación técnica o proyectos colaborativos.             |
++------------------------------+--------------------------------------------------------------------------+
+
+🪄 Tu valor diferencial no es competir con las grandes marcas.  
+Tu valor está en **llegar donde ellas no llegan**, con un sistema que recicla, acompaña y transforma desde lo humano.  
+Este proyecto no solo resuelve problemas… **inspira una nueva forma de hacer tecnología**.
+

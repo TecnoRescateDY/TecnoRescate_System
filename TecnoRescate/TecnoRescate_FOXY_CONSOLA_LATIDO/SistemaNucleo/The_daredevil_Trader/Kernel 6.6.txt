@@ -1,0 +1,31 @@
+# 🧙‍♂️ Kernel 6.6 - Evolución del Sistema Daredevil TradingBot
+
+## 🎯 Objetivo de esta versión:
+
+En esta versión se consolidan y mejoran los módulos iniciales, además de incorporar nuevas funcionalidades y optimizaciones basadas en la experiencia con Kernel 6.5.
+
+---
+
+## 🛠️ Contenido de Kernel 6.6:
+
+- Consolidación de módulos DareSignal_X.
+- Mejoras en HardFoxy para mayor automatización.
+- Optimización y refactorización de cálculos en F-Optima_Calculator.
+- Documentación actualizada y nuevas bitácoras de desarrollo.
+
+---
+
+## 📌 Instrucciones para esta versión:
+
+- Mantener las bitácoras actualizadas.
+- Implementar pruebas unitarias para los módulos clave.
+- Documentar las nuevas funcionalidades y cambios.
+
+---
+
+## ✅ Estado actual:
+
+Kernel 6.6 está en fase de desarrollo activo, con módulos en constante mejora.
+
+---
+

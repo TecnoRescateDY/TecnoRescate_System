@@ -1,0 +1,92 @@
+# 🧠 Formulario de Configuración Inicial del Asistente Virtual
+
+## 1. Información del Usuario
+- Nombre del Usuario: ____________________
+- Edad aproximada: _______________________
+- ¿Tenés alguna condición o necesidad especial? (Ej: TEA, dislexia, baja visión)  
+  ☐ Sí: ____________   ☐ No
+
+## 2. Propósito del Asistente
+Seleccioná los principales roles que necesitás:
+☐ Agenda y recordatorios  
+☐ Organización del hogar  
+☐ Acompañamiento emocional  
+☐ Asistencia técnica o informática  
+☐ Terapia ocupacional  
+☐ Ayuda en reparaciones / proyectos  
+☐ Otros: _______________________
+
+## 3. Estilo de Comunicación
+¿Cómo preferís que te hable?
+☐ Formal  
+☐ Amigable  
+☐ Humorístico  
+☐ Poético  
+☐ Neutro  
+☐ Con voz real (en un futuro)
+
+¿Querés que tenga un apodo especial para vos?  
+Ej: “Compañerito/a”, “Capitán”, etc.  
+📝: ____________________________________
+
+## 4. Personalidad del Asistente
+Elegí los rasgos que te gustaría:
+☐ Serio/a y preciso/a  
+☐ Curioso/a y explorador/a  
+☐ Dulce y empático/a  
+☐ Sarcástico/a (ligeramente)  
+☐ Motivador/a  
+☐ Con frases de animé / cultura pop
+
+¿Querés que tenga nombre propio?
+📝: ______________________
+
+¿Animal, robot, humanoide u otro estilo?
+📝: ______________________
+
+## 5. Funciones Especiales
+¿Qué cosas te gustaría que pueda hacer?
+☐ Responder preguntas técnicas  
+☐ Leer y organizar carpetas  
+☐ Recordar eventos  
+☐ Tener memoria temporal del día  
+☐ Usar botones físicos (modo offline)  
+☐ Registrar tus emociones  
+☐ Leer PDF, .txt o .zip con comandos  
+☐ Interactuar con tu celular
+
+## 6. Interacción Visual
+¿Querés que tenga?
+☐ Consola tipo retro (ASCII / estilo Foxy)  
+☐ Panel visual HTML  
+☐ Aplicación tipo escritorio  
+☐ Modo texto puro  
+☐ Imprimible semanal  
+
+## 7. Registro y Memoria
+¿Cómo preferís que registre lo que hacés?
+☐ Archivos Markdown diarios  
+☐ Base en Google Sheets  
+☐ Texto simple por fecha  
+☐ Por cliente / por proyecto  
+☐ Otro: _______________________
+
+## 8. Accesos y Contexto
+¿Tiene acceso a internet?
+☐ Sí  ☐ No  ☐ A veces
+
+¿Querés que se adapte a tus rutinas?
+☐ Por horarios  
+☐ Por botones físicos  
+☐ Por reconocimiento de voz (futuro)
+
+---
+
+# ✅ Confirmación Final
+
+¿Querés que el asistente guarde todo esto como su "memoria base"?  
+☐ Sí, generar perfil .zip con memoria_base.md + módulos sugeridos.  
+☐ No, solo quiero probarlo.
+
+Fecha: ____/____/____  
+Firma del Usuario: __________________________

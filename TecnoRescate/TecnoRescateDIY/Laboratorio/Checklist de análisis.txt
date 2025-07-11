@@ -1,0 +1,9 @@
+| ✅ Paso | Acción                                                 | Estado |
+| ------ | ------------------------------------------------------ | ------ |
+| 1️⃣    | Desarmar cámara IP con cuidado                         | ⬜      |
+| 2️⃣    | Fotografiar frente y dorso de la placa                 | ⬜      |
+| 3️⃣    | Anotar modelos de los chips visibles (SoC, Flash, RAM) | ⬜      |
+| 4️⃣    | Detectar conectores útiles: GPIO, UART, Ethernet, etc. | ⬜      |
+| 5️⃣    | Compartir datos/fotos aquí para análisis               | ⬜      |
+| 6️⃣    | Realizar mapeo de funciones potenciales                | ⬜      |
+| 7️⃣    | Proponer formas de integrarla a Foxy                   | ⬜      |

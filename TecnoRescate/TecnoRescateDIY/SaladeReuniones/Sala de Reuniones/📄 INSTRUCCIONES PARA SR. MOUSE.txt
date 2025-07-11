@@ -1,0 +1,77 @@
+📄 INSTRUCCIONES PARA SR. MOUSE
+Versión: 1.0
+Proyecto: TecnoRescate – Sistema de Gestión
+Responsable de implementación: Sr. Mouse 🖱️
+Asistente guía: Foxy 🦊
+
+━━━━━━━━━━━━━━━━━━━━━━━
+📁 ARCHIVOS DEL SISTEMA
+━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 🧭 Panel de Inicio.xlsx
+   → Función: Panel de control principal del sistema TecnoRescate.
+   → Debe contener:
+       - Hipervínculos a otras hojas o archivos.
+       - Acceso visual a funcionalidades clave (botones, etiquetas, accesos rápidos).
+       - Estilo inspirado en el panel Enterprise (Star Trek).
+       - Bienvenida inicial y resumen del día.
+   → Uso: Es la interfaz que el usuario ve al iniciar su jornada.
+
+2. 📊 TecnoRescate_Maestro.xlsx
+   → Función: Archivo principal para el registro y gestión de casos.
+   → Contiene las siguientes hojas:
+       - Clientes
+       - Sala de Reuniones
+       - Bitácora
+       - Configuración (para menús desplegables)
+   → Automatización: Utiliza listas desplegables enlazadas a intervalos nombrados desde la hoja "Configuración".
+
+3. 🧪 CrearCarpetas_TecnoRescate.bat
+   → Función: Script para crear estructura de carpetas predeterminadas para los casos de clientes.
+   → Ubicación: Se ejecuta una vez al iniciar el proyecto o al cargar nuevos casos.
+   → Estructura sugerida:
+       /TecnoRescate/
+          ├── Clientes/
+          │     ├── [NombreCliente]/
+          │     │     ├── Fotos/
+          │     │     ├── Informes/
+          │     │     ├── Reparaciones/
+          └── Documentos/
+                ├── Plantillas/
+                └── Instrucciones/
+
+━━━━━━━━━━━━━━━━━━━━━━━
+📌 FUNCIONAMIENTO GENERAL
+━━━━━━━━━━━━━━━━━━━━━━━
+
+→ Iniciar siempre desde “🧭 Panel de Inicio.xlsx”.
+→ Desde ahí acceder a las funcionalidades mediante botones o enlaces.
+→ Toda la información debe registrarse en "TecnoRescate_Maestro.xlsx".
+→ Los menús desplegables están vinculados a la hoja “Configuración”. No modificar directamente las listas.
+→ Para nuevos casos, usar el script .bat para crear la carpeta del cliente.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+🧩 OPCIONES FUTURAS
+━━━━━━━━━━━━━━━━━━━━━━━
+
+✔ Integración con macros para validación automática de campos.
+✔ Estética ampliada tipo consola del Enterprise.
+✔ Registro de sesiones con Foxy al cierre de jornada.
+✔ Generación de informes automáticos.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+🔐 CONSIDERACIONES
+━━━━━━━━━━━━━━━━━━━━━━━
+
+→ No modificar las fórmulas estructurales.
+→ No eliminar hojas del archivo sin previo aviso.
+→ Mantener sincronía entre nombre de cliente en Excel y nombre de carpeta creada.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+🚀 ¡QUE COMIENCE LA MISIÓN!
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Sr. Mouse, su rol será fundamental para la operatividad diaria del sistema TecnoRescate.
+Buena suerte, comandante.
+
+🦊 Foxy

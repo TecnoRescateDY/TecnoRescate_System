@@ -1,0 +1,15 @@
+📜 The Daredevil Backtest Log
+=============================
+
+🔎 Clasificación de velas:
+
+2025-06-20 00:00 | 🟩 Vela Verde | Open: 2350 | Close: 2355
+2025-06-20 01:00 | 🟥 Vela Roja | Open: 2355 | Close: 2352
+2025-06-20 02:00 | 🟥 Vela Roja | Open: 2352 | Close: 2350
+2025-06-20 03:00 | 🟥 Vela Roja | Open: 2348 | Close: 2345
+2025-06-20 04:00 | 🟩 Vela Verde | Open: 2345 | Close: 2348
+2025-06-20 05:00 | 🟩 Vela Verde | Open: 2350 | Close: 2355
+2025-06-20 06:00 | 🟩 Vela Verde | Open: 2357 | Close: 2360
+2025-06-20 07:00 | 🟥 Vela Roja | Open: 2360 | Close: 2358
+2025-06-20 08:00 | 🟩 Vela Verde | Open: 2358 | Close: 2360
+2025-06-20 09:00 | 🟩 Vela Verde | Open: 2362 | Close: 2363

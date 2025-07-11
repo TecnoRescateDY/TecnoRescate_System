@@ -1,0 +1,9 @@
+{
+    "familia": ["mica", "papa", "mama"],
+    "intervalo_minutos": 5,
+    "alertas": [
+        "Reunión escolar a las 18:00",
+        "Cumpleaños de Mica",
+        "Ir al médico - jueves 10hs"
+    ]
+}

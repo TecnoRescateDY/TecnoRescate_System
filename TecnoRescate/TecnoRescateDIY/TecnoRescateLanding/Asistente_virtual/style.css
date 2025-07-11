@@ -1,0 +1,96 @@
+/* Fondo general y tipografía */
+body {
+  background-color: #000;
+  color: #ccffcc;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 16px;
+  background-color: #111;
+  box-shadow: 0 0 15px #00ff00;
+}
+
+/* Encabezados */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ff00;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #66ff66;
+  margin-top: 1.5rem;
+}
+
+/* Subtítulo */
+.sub {
+  text-align: center;
+  color: #99ff99;
+  margin-bottom: 20px;
+}
+
+/* Enlaces */
+a {
+  color: #33ff33;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Demo visual */
+.demo {
+  background-color: #222;
+  border: 1px solid #33ff33;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: #ccffcc;
+}
+
+/* Lista de planes */
+ul {
+  padding-left: 1.2rem;
+  list-style: square;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Botones */
+a.button, .button {
+  display: inline-block;
+  background-color: #00cc66;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+a.button:hover, .button:hover {
+  background-color: #00e673;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #66ff66;
+  border-top: 1px solid #00ff00;
+  padding-top: 10px;
+}

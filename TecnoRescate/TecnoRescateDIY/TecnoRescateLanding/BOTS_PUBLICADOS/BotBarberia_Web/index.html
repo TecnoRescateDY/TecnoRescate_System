@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOT BARBERÍA 💈</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #f4f1ec;
+      color: #3e2723;
+    }
+
+    .consola {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 2px solid #6d4c41;
+    }
+
+    h1 {
+      text-align: center;
+      color: #6d4c41;
+      margin-bottom: 5px;
+      font-size: 28px;
+    }
+
+    h2.subtitulo {
+      text-align: center;
+      color: #8d6e63;
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .pantalla {
+      background-color: #1a1a1a;
+      color: #00ff55;
+      padding: 16px;
+      border-radius: 10px;
+      min-height: 110px;
+      margin-bottom: 25px;
+      font-size: 18px;
+      font-family: 'Courier New', monospace;
+      white-space: pre-wrap;
+      border-left: 5px solid #00ff55;
+    }
+
+    .botonera {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    button {
+      background-color: #6d4c41;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5d4037;
+    }
+
+    iframe {
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #8d6e63;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #6d4c41;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+      h2.subtitulo {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="consola">
+    <h1>💈 BOT BARBERÍA 💈</h1>
+    <h2 class="subtitulo">automatizamos tu estilo ✂️</h2>
+    <div id="respuesta" class="pantalla"></div>
+
+    <div class="botonera">
+      <button onclick="mostrar('📍 Estamos en Av. Principal 456, BarberCity ✂️')">📍 Ubicación de la barbería</button>
+      <button onclick="mostrar('✂️ Nuestros servicios: Corte de pelo, Arreglo de barba, Afeitado clásico, Tratamientos capilares.')">📄 Ver servicios y precios</button>
+      <button onclick="mostrar('📞 WhatsApp: +54 9 9876 543210 | Instagram: @barberbot')">📞 Contactar por WhatsApp</button>
+      <button onclick="mostrar('🗓️ Para reservar tu turno, escribinos por WhatsApp o visitá nuestra web.')">🗓️ Reservar un turno</button>
+      <button onclick="mostrar('✨ Promoción del mes: Corte + Barba con 15% de descuento!')">✨ Promociones</button>
+      <button onclick="mostrarMapa()">🗺️ Ver mapa del local</button>
+    </div>
+
+    <div id="mapa" style="display: none;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.998246327668!2d-58.3815923!3d-34.6036844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac8d31a5b81%3A0x6b6d51187d9f7a7!2sObelisco!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <footer>
+      ♻️ [🧙‍♂️+🦊] en modo barbería con alma retro 💈💾<br />
+      <a href="https://tecnorescatelanding.netlify.app" target="_blank">🌐 TecnoRescate</a>
+    </footer>
+  </div>
+
+  <script>
+    function escribirLento(texto, destinoID, callback) {
+      const el = document.getElementById(destinoID);
+      el.textContent = "";
+      let i = 0;
+      const intervalo = setInterval(() => {
+        if (i < texto.length) {
+          el.textContent += texto.charAt(i);
+          i++;
+        } else {
+          clearInterval(intervalo);
+          if (callback) callback();
+        }
+      }, 30);
+    }
+
+    function mostrar(mensaje) {
+      document.getElementById('mapa').style.display = 'none';
+      escribirLento(mensaje, 'respuesta');
+    }
+
+    function mostrarMapa() {
+      const mensaje = "📍 Te esperamos en nuestra barbería. Mirá el mapa abajo 👇";
+      escribirLento(mensaje, 'respuesta', () => {
+        document.getElementById('mapa').style.display = 'block';
+      });
+    }
+
+    window.onload = function() {
+      escribirLento("🤖 Hola, soy tu bot de la barbería. ¿En qué puedo ayudarte hoy?", 'respuesta');
+    };
+  </script>
+</body>
+</html>

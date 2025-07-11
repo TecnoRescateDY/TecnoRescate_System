@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOT BARBERÍA 💈</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="consola">
+    <h1>💈 BOT BARBERÍA 💈</h1>
+    <h2 class="subtitulo">automatizamos tu estilo ✂️</h2>
+    <div id="respuesta" class="pantalla"></div>
+
+    <div class="botonera">
+      <button onclick="mostrar('📍 Estamos en Av. Principal 456, BarberCity ✂️')">📍 Ubicación de la barbería</button>
+      <button onclick="mostrar('✂️ Nuestros servicios: Corte de pelo, Arreglo de barba, Afeitado clásico, Tratamientos capilares.')">📄 Ver servicios y precios</button>
+      <button onclick="mostrar('📞 WhatsApp: +54 9 9876 543210 | Instagram: @barberbot')">📞 Contactar por WhatsApp</button>
+      <button onclick="mostrar('🗓️ Para reservar tu turno, escribinos por WhatsApp o visitá nuestra web.')">🗓️ Reservar un turno</button>
+      <button onclick="mostrar('✨ Promoción del mes: Corte + Barba con 15% de descuento!')">✨ Promociones</button>
+      <button onclick="mostrarMapa()">🗺️ Ver mapa del local</button>
+    </div>
+
+    <div id="mapa" style="display: none;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.998246327668!2d-58.3815923!3d-34.6036844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac8d31a5b81%3A0x6b6d51187d9f7a7!2sObelisco!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <footer>
+      ♻️ [🧙‍♂️+🦊] en modo barbería con alma retro 💈💾<br />
+      <a href="https://tecnorescatelanding.netlify.app" target="_blank">🌐 TecnoRescate</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

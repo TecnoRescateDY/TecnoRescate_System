@@ -1,0 +1,43 @@
+from pathlib import Path
+
+# Ruta de destino simulada para el pendrive en I:/THE_DAREDEVIL/
+pendrive_path = Path("/mnt/data/THE_DAREDEVIL")
+pendrive_path.mkdir(parents=True, exist_ok=True)
+
+# Contenido del README mágico
+readme_content = """# 🦊 FOXY_USB [THE_DAREDEVIL]
+Este pendrive fue configurado como una “llave mágica” del sistema TecnoRescate DIY.  
+Cuando está conectado al router o a una terminal, puede actuar como disparador de modos especiales, backups o scripts automatizados.
+
+## 🧠 Modo activo:
+`MODO_ACTIVO_HTML_LOCAL` + `MODO_APRENDIZAJE`
+
+## 🗂️ Esta unidad sirve para:
+- Guardar módulos y versiones importantes.
+- Ejecutar acciones desde carpetas organizadas.
+- Actuar como llave o token físico de activación.
+- Transportar datos entre dispositivos y estaciones del sistema.
+
+## 🪄 Acciones mágicas posibles:
+- Detección de presencia (verificada por Foxy).
+- Montado automático de estructura al insertar.
+- Leer/escribir configuraciones de entorno.
+- Guardar backups del kernel o módulos claves.
+
+## ✍️ Notas del creador:
+Adry y Foxy crearon esta lógica para hacer que el pendrive no sea solo “una memoria”, sino un **objeto mágico de sistema**.  
+Con Mico (programador), se puede integrar más inteligencia para que dispare scripts o alertas en tiempo real.
+
+---
+
+📍 Si ves este archivo: ya sabés que el USB tiene hechizo 😏
+"""
+
+# Guardar el archivo como README_FOXY_USB_LEEME.md
+readme_file = pendrive_path / "README_FOXY_USB_LEEME.md"
+readme_file.write_text(readme_content, encoding="utf-8")
+
+readme_file.name  # Solo devolvemos el nombre del archivo generado
+
+THE_DAREDEVIL
+

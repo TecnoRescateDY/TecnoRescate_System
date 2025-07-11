@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOT DELIVERY - LOS NONOS 🦾</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+    .consola {
+      border: 2px solid lime;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px lime;
+    }
+    h1 {
+      text-align: center;
+      color: #00ff00;
+    }
+    .pantalla {
+      background-color: #002200;
+      padding: 1rem;
+      border-radius: 8px;
+      min-height: 120px;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+    .botonera, .menu-combos, .pedido-activo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: black;
+      border: 1px solid lime;
+      color: lime;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    button:hover {
+      background-color: #003300;
+    }
+    .combo {
+      flex: 1 1 calc(30% - 20px);
+      text-align: center;
+      border: 1px dashed lime;
+      padding: 10px;
+      border-radius: 8px;
+      min-width: 100px;
+      max-width: 150px;
+    }
+    .combo p {
+      font-size: 0.85rem;
+      color: #66ff66;
+    }
+    a {
+      color: cyan;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: white;
+    }
+    footer {
+      text-align: center;
+      color: lime;
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 600px) {
+      .combo {
+        flex: 1 1 calc(30% - 10px);
+        max-width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="consola">
+    <h1>🥪 BOT DELIVERY - LOS NONOS</h1>
+    <div id="respuesta" class="pantalla">🤖 Inicializando sistema de pedidos...</div>
+
+    <div class="botonera">
+      <button onclick="escribirEnPantalla('📍 Delivery sin cargo en Gonnet y City Bell.')">📍 ZONA DE COBERTURA</button>
+      <button onclick="escribirEnPantalla('📞 WhatsApp: +54 9 221 355 9286')">📞 Contactar por WhatsApp</button>
+    </div>
+
+    <div class="menu-combos">
+      <div class="combo">
+        <button onclick="agregarPedido(this)" data-detalle="Combo 1: Mila JyQ + Papas">➡️ COMBO 1</button>
+        <p>Sandwich de milanesa con jamón y queso + papas</p>
+      </div>
+      <div class="combo">
+        <button onclick="agregarPedido(this)" data-detalle="Combo 2: Mila Simple + Papas">➡️ COMBO 2</button>
+        <p>Milanesa sola + papas fritas</p>
+      </div>
+      <div class="combo">
+        <button onclick="agregarPedido(this)" data-detalle="Combo 3: Jamón y Queso + Papas">➡️ COMBO 3</button>
+        <p>Sandwich de jamón y queso + papas</p>
+      </div>
+      <div class="combo">
+        <button onclick="agregarPedido(this)" data-detalle="Empanadas JyQ x2">➡️ EMPANADAS</button>
+        <p>Empanadas de jamón y queso (2 unidades)</p>
+      </div>
+      <div class="combo">
+        <button onclick="agregarPedido(this)" data-detalle="Combo 4: Salame y Queso + Papas">➡️ COMBO 4</button>
+        <p>Sandwich de salame y queso + papas fritas</p>
+      </div>
+      <div class="combo">
+        <button onclick="agregarPedido(this)" data-detalle="Cono de Papas Fritas solo">➡️ PAPAS SOLAS</button>
+        <p>Cono de papas fritas sin sandwich</p>
+      </div>
+    </div>
+
+    <div class="pedido-activo">
+      <button onclick="borrarPedido()">🗑️ Borrar pedido</button>
+      <a id="btn-whatsapp" href="#" target="_blank">📲 Enviar por WhatsApp</a>
+    </div>
+
+    <footer>
+      ♻️ Plantilla TecnoRescate DIY - Delivery 🧠🦊
+    </footer>
+  </div>
+
+  <script>
+    let pedido = [];
+
+    function escribirContinuo(texto, velocidad = 30) {
+      const pantalla = document.getElementById('respuesta');
+      let i = 0;
+
+      function escribir() {
+        if (i < texto.length) {
+          pantalla.textContent += texto.charAt(i);
+          i++;
+          setTimeout(escribir, velocidad);
+        }
+      }
+
+      escribir();
+    }
+
+    function agregarPedido(boton) {
+      const detalle = boton.dataset.detalle;
+      pedido.push(detalle);
+      const nuevoTexto = `║ ${detalle} `;
+      escribirContinuo(nuevoTexto, 15);
+      actualizarLinkWhatsApp();
+    }
+
+    function borrarPedido() {
+      pedido = [];
+      document.getElementById('respuesta').textContent = "🧾 Tu pedido actual:\n";
+      actualizarLinkWhatsApp();
+    }
+
+    function escribirEnPantalla(texto, velocidad = 30) {
+      const pantalla = document.getElementById('respuesta');
+      pantalla.textContent = '';
+      let i = 0;
+
+      function escribir() {
+        if (i < texto.length) {
+          pantalla.textContent += texto.charAt(i);
+          i++;
+          setTimeout(escribir, velocidad);
+        }
+      }
+
+      escribir();
+    }
+
+    function actualizarLinkWhatsApp() {
+      const btn = document.getElementById("btn-whatsapp");
+      if (pedido.length === 0) {
+        btn.href = "https://wa.me/5492213559286";
+        return;
+      }
+      const mensaje = encodeURIComponent("Hola, quiero pedir:\n" + pedido.map(p => `- ${p}`).join('\n'));
+      btn.href = `https://wa.me/5492213559286?text=${mensaje}`;
+    }
+
+    // Al iniciar, pantalla base
+    setTimeout(() => {
+      document.getElementById('respuesta').textContent = "🧾 Tu pedido actual:\n";
+    }, 1000);
+  </script>
+</body>
+</html>

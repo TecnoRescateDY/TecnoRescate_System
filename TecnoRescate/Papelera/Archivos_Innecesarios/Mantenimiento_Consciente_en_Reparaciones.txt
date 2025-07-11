@@ -1,0 +1,25 @@
+🧰 Integración de 'Mantenimiento Consciente' en la Habitación Reparaciones 🦊
+
+Objetivo:
+Agregar un submodo dentro del sistema de Reparaciones que permita activar un enfoque técnico + ecológico.
+
+🔧 ¿Qué es el Mantenimiento Consciente?
+Es una forma de hacer reparaciones con una mirada integral:
+- Evaluar el estado energético del equipo.
+- Sugerir mejoras de uso (uso de software libre, mantenimiento de batería, limpieza térmica).
+- Brindar consejos para alargar la vida útil del hardware.
+
+🧠 ¿Cómo se aplica?
+1. Se agrega una casilla: [ ] Activar modo mantenimiento consciente
+2. Al marcarla, Foxy despliega un checklist:
+   - ¿El equipo tiene software obsoleto?
+   - ¿Consume mucha energía?
+   - ¿Se puede actualizar a Linux?
+   - ¿Es posible reducir el brillo o poner modo ahorro?
+3. Se genera un mini informe con recomendaciones.
+
+📄 Resultado:
+- Informe con sello Foxy: "Este equipo fue asesorado en uso sustentable 🦊♻️"
+- Sugerencias archivadas en el historial técnico.
+
+Ubicación recomendada: Carpeta /Sala de Reunión/TecnoRescate/Reparaciones/

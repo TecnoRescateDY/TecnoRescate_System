@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lorena Altamirano | Consultas Profesionales</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Lorena Altamirano</h1>
+      <p>Atención profesional en salud y bienestar. Turnos disponibles.</p>
+      <a href="#contacto" class="btn">Solicitar Turno</a>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto directo</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar por WhatsApp</button>
+      </form>
+    </section>
+  </main>    <!-- Sección Agenda de Turnos -->
+    <section id="turnos" class="agenda">
+      <h2>Reservá tu turno</h2>
+      <form id="form-turno">
+        <label for="nombre-turno">Nombre</label>
+        <input type="text" id="nombre-turno" required />
+
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" required />
+
+        <label for="hora">Horario</label>
+        <select id="hora" required>
+          <option value="">Seleccioná una hora</option>
+          <option>09:00</option>
+          <option>10:30</option>
+          <option>12:00</option>
+          <option>15:00</option>
+          <option>17:30</option>
+        </select>
+
+        <button type="submit">Confirmar por WhatsApp</button>
+      </form>
+    </section><!-- Sección Dictado de Voz -->
+<section id="dictado" class="voz">
+  <h2>Dictado por voz</h2>
+  <p>Presioná el botón y comenzá a hablar.</p>
+  <button id="btn-dictar">🎤 Iniciar dictado</button>
+
+  <textarea id="texto-dictado" rows="4" placeholder="Tu mensaje aparecerá aquí..."></textarea>
+  <button id="btn-enviar-voz">Enviar por WhatsApp</button>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

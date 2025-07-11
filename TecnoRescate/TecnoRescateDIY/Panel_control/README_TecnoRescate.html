@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>📘 FOXY - Mapa del Sistema TecnoRescate</title>
+  <style>
+    body {
+      background: black;
+      color: #00FF00;
+      font-family: 'Courier New', monospace;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #00ffaa;
+      text-shadow: 0 0 5px #00ffaa;
+    }
+    .caja {
+      border: 1px dashed #00FF00;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      background: #0a0a0a;
+    }
+    pre {
+      background: #111;
+      padding: 1rem;
+      border: 1px solid #0f0;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #0f0;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    .comando {
+      background: #111;
+      padding: 0.5rem;
+      display: inline-block;
+      border: 1px dashed #0f0;
+      margin: 5px 0;
+    }
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🦊 FOXY - Mapa del Sistema TecnoRescate DIY</h1>
+
+<div class="caja">
+  <h2>📦 Estructura Modular General</h2>
+  <pre>
+/TecnoRescateDIY/
+├── Panel_Control_FOXY/
+├── Colossus/
+├── Clientes/
+├── Bitacoras/
+├── Kernel/
+├── Repuestos/
+├── Laboratorio/
+├── SalaDeReuniones/
+  </pre>
+</div>
+
+<div class="caja">
+  <h2>🔁 Flujo General del Sistema</h2>
+  <ol>
+    <li>📝 Recepción del cliente → carpeta en <code>/Clientes/</code></li>
+    <li>🤖 Uso de <strong>Colossus</strong> para presupuesto + instrucción</li>
+    <li>📋 Instrucción se copia a FOXY vía ChatGPT</li>
+    <li>🧱 FOXY genera el bot HTML</li>
+    <li>📤 Publicación (Netlify / ZIP / USB)</li>
+    <li>🛠 Reparación o Reciclaje según resultado</li>
+  </ol>
+</div>
+
+<div class="caja">
+  <h2>🧩 Módulos y funciones</h2>
+  <table>
+    <thead>
+      <tr><th>Módulo</th><th>Función Principal</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Panel_Control_FOXY</td><td>Navegación modular general</td></tr>
+      <tr><td>Colossus</td><td>Generador de bots y landings desde plantillas</td></tr>
+      <tr><td>Clientes/</td><td>Bot y archivos por cliente</td></tr>
+      <tr><td>Kernel/</td><td>Comandos y modos de FOXY</td></tr>
+      <tr><td>Bitacoras/</td><td>Registro narrativo de tareas</td></tr>
+      <tr><td>SalaDeReuniones/</td><td>Presupuestos, acuerdos y demos</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="caja">
+  <h2>📟 Comandos FOXY útiles</h2>
+  <div class="comando">registrar orden</div> → crea carpeta de cliente<br>
+  <div class="comando">iniciar reparación</div> → mueve a /Laboratorio/<br>
+  <div class="comando">reciclar dispositivo</div> → mueve a /Repuestos/<br>
+  <div class="comando">generar reporte</div> → crea resumen técnico<br>
+  <div class="comando">activar modo [nombre]</div> → activa FOXY modo personalizado<br>
+</div>
+
+<div class="caja">
+  <h2>🔗 Flujo visual simplificado</h2>
+  <pre>
+🧑 Cliente
+   │
+   ▼
+[🧠 Colossus - Generador]
+   │── Plantilla
+   │── Módulos
+   │── Instrucción FOXY
+   ▼
+🤖 FOXY genera HTML
+   │
+   ▼
+📁 /Clientes/ClienteX/index.html
+   │
+   ▼
+🌐 Publicación (Netlify, ZIP, USB)
+  </pre>
+</div>
+
+<div class="caja">
+  <h2>📌 Futuro (versión 2.0)</h2>
+  <ul>
+    <li>Integración directa con Netlify</li>
+    <li>Generación de ZIP desde Colossus</li>
+    <li>Modo Cliente limitado para edición simple</li>
+    <li>Panel administrativo con historial de bots generados</li>
+  </ul>
+</div>
+
+<div class="footer">
+  🦊 Foxy dice: "No importa cuán profundo sea el laberinto… si hay un mapa y una madriguera, hay salida."
+</div>
+
+</body>
+</html>

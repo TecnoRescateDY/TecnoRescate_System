@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BotContravenciones - Asistente en Patrulla</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #111; color: #0f0; text-align: center; padding: 30px; }
+    button { font-size: 1.2em; padding: 15px 25px; margin: 10px; border: none; border-radius: 5px; background-color: #0f0; color: #000; cursor: pointer; }
+    button:active { background-color: #080; }
+    .status { margin-top: 20px; font-size: 1.1em; color: #f00; animation: parpadeo 1s infinite; display: none; }
+    .output textarea { width: 100%; height: 200px; background: #000; color: #0f0; border: 1px solid #0f0; padding: 10px; font-family: monospace; font-size: 1em; border-radius: 5px; }
+
+    @keyframes parpadeo {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🦊 BotContravenciones</h1>
+  <p>Presioná <strong>"Iniciar dictado"</strong> para comenzar, luego <strong>"Finalizar dictado"</strong> para detener, y podés editar el texto antes de guardarlo.</p>
+
+  <button onclick="iniciarDictado()">🎤 Iniciar dictado</button>
+  <button onclick="detenerDictado()">🛑 Finalizar dictado</button>
+  <button onclick="guardarComoTXT()">💾 Guardar como TXT</button>
+  <button onclick="borrarTexto()">🧹 Borrar</button>
+
+  <div class="status" id="estadoGrabacion">● ESCUCHANDO</div>
+  <div class="output">
+    <textarea id="textoSalida">[Esperando dictado...]</textarea>
+  </div>
+
+  <script>
+    let reconocimiento;
+    let textoAcumulado = "";
+
+    if ('webkitSpeechRecognition' in window) {
+      reconocimiento = new webkitSpeechRecognition();
+      reconocimiento.lang = 'es-AR';
+      reconocimiento.continuous = true;
+      reconocimiento.interimResults = false;
+
+      reconocimiento.onresult = function(event) {
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          if (event.results[i].isFinal) {
+            textoAcumulado += event.results[i][0].transcript + " ";
+          }
+        }
+        document.getElementById("textoSalida").value = textoAcumulado.trim();
+      };
+
+      reconocimiento.onerror = function(event) {
+        console.error("Error en el reconocimiento de voz:", event.error);
+      };
+    } else {
+      alert("Este navegador no soporta reconocimiento por voz. Por favor, usá Chrome en Android.");
+    }
+
+    function iniciarDictado() {
+      if (reconocimiento) {
+        reconocimiento.start();
+        document.getElementById("estadoGrabacion").style.display = "inline-block";
+      }
+    }
+
+    function detenerDictado() {
+      if (reconocimiento) {
+        reconocimiento.stop();
+        document.getElementById("estadoGrabacion").style.display = "none";
+      }
+    }
+
+    function guardarComoTXT() {
+      const texto = document.getElementById("textoSalida").value;
+      const blob = new Blob([texto], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "contravencion.txt";
+      a.click();
+    }
+
+    function borrarTexto() {
+      textoAcumulado = "";
+      document.getElementById("textoSalida").value = "";
+    }
+  </script>
+</body>
+</html>

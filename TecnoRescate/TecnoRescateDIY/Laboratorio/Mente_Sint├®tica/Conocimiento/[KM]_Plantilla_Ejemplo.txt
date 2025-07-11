@@ -1,0 +1,21 @@
+[KM] REGISTRO DE CONOCIMIENTO 
+Fecha: AAAA-MM-DD 
+Tipo: Idea / Descubrimiento / Evaluación / Reflexión 
+Origen: Experiencia propia / IA externa / Lectura / Otro 
+ 
+--- 
+ 
+📌 TEMA / DESCRIPCIÓN: 
+(describir brevemente el conocimiento registrado) 
+ 
+🔧 DETALLE TÉCNICO: 
+(herramientas, comandos, sistemas involucrados) 
+ 
+🎯 POSIBLES APLICACIONES: 
+(dónde podría usarse dentro del sistema o proyectos) 
+ 
+🧩 CATEGORÍA: 
+(Laboratorio / Foxy / Asistente Virtual / Diagnóstico / Kernel / etc.) 
+ 
+📎 NOTAS: 
+(comentarios personales, dudas o próximas acciones) 

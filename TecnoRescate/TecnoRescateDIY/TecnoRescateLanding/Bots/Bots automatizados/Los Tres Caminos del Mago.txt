@@ -1,0 +1,44 @@
+### 🔮 MÓDULO 1 — “Los Tres Caminos del Arcano”
+
+🧙‍♂️ **@bot Tarot DIY — Solo Arcanos Mayores**
+
+---
+
+#### 1️⃣ FASE DE TIRADA
+
+* El bot mezcla los 22 arcanos mayores (aleatoriamente).
+* Muestra 3 cartas, sin orden (ej: 🎴 El Loco, 🎴 La Torre, 🎴 El Ermitaño).
+* El usuario elige el orden escribiendo:
+  `Orden: 2-3-1` → (La Torre → El Ermitaño → El Loco)
+
+---
+
+#### 2️⃣ FASE DE ANÁLISIS
+
+* El bot interpreta cada carta según su posición:
+
+  * **Primera** = Presente o estado actual.
+  * **Segunda** = Camino o conflicto interior.
+  * **Tercera** = Destino, resultado o evolución arquetípica.
+
+---
+
+#### 3️⃣ FASE DE FÁBULA / NARRATIVA
+
+* La IA genera un relato breve tipo fábula o mito:
+
+  * Basado en los tres arquetipos elegidos.
+  * En tono **medieval/simbólico**, estilo libro rojo, con elementos como reinos, criaturas, enigmas, sabios, etc.
+  * Finaliza con una **moraleja críptica o sugerente**, tipo:
+
+    > *“Quien camina con la Torre a cuestas, deberá encender la lámpara del Ermitaño, para volverse tan libre como el Loco.”*
+
+---
+
+### ⚙️ FUNCIONAMIENTO INTERNO DEL BOT
+
+* Mezcla → Selección → Orden del usuario → Interpreta cada carta → Llama a IA para generar:
+
+  * a) Descripción individual de cada arcano
+  * b) Fábula integradora
+  * c) Cierre tipo proverbio/moraleja

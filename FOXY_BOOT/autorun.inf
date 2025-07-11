@@ -1,0 +1,4 @@
+[Autorun]
+label=FOXY_BOOT
+icon=foxy.ico
+open=Panel_FOXY_BOOT.html

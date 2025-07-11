@@ -1,0 +1,30 @@
+[Hipótesis de reutilización – Epson XP-211]
+
+Componentes útiles:
+- EEPROM 24Cxx o 25Cxx → Reprogramable para guardar configuraciones o mensajes.
+- Botonera real → Reutilizable como interfaz física para asistentes o rutinas.
+- Fuente estable 12V/24V → Perfecta para alimentar microcontroladores o routers.
+- Motores paso a paso → Útiles para automatismos o sistemas DIY.
+- Sensores ópticos → Para detección de posición o conteo.
+- Panel LCD + botones → Terminal físico para Ani 🐰 o Foxy.
+
+Ideas para botones físicos:
+1. 🟢 Iniciar rutina con Ani.
+2. 🔁 Avanzar de módulo.
+3. 📝 Registrar eventos.
+4. 🧘 Activar modo relax.
+5. 📦 Acceso a recursos.
+6. 💌 Botón de ayuda.
+
+Notas:
+- Compatible con ESP32 / Arduino.
+- Panel de Epson puede adaptarse a consola terapéutica o técnica.
+- Almacenamiento EEPROM limitado, ideal para configuraciones clave o frases.
+
+Próximos pasos:
+✔️ Verificar conexión de botonera.
+✔️ Mapear pines útiles.
+✔️ Identificar EEPROM y revisar datasheet.
+✔️ Evaluar integración con sistema local (router, PC vieja).
+
+🦊Tecno_Rescate♻️
